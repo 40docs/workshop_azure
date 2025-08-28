@@ -6,7 +6,7 @@ A comprehensive Azure cloud workshop documentation site built with MkDocs.
 
 Visit the live documentation at: https://40docs.github.io/workshop_azure/
 
-> 🚧 Site is currently being deployed...
+✅ **Site is live and themed with 40docs branding!**
 
 ## 🛠 Development
 

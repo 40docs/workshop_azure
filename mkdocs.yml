@@ -81,8 +81,13 @@ plugins:
   - glightbox:
       zoomable: true
 
-# Extra CSS and JavaScript will be handled by the theme
-# extra_css and extra_javascript moved to theme_workshop_azure repository
+# Extra CSS and JavaScript
+extra_css:
+  - index.css
+  - landing-page.css
+
+extra_javascript:
+  - extra.js
 
 # Social links
 extra:

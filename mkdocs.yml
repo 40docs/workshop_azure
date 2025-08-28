@@ -8,11 +8,6 @@ copyright: "40docs Organization"
 repo_name: 40docs/workshop_azure
 repo_url: https://github.com/40docs/workshop_azure
 
-# Navigation
-nav:
-  - Home: index.md
-  - Getting Started: getting-started.md
-
 # Theme configuration
 theme:
   name: material

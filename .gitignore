@@ -53,4 +53,7 @@ venv.bak/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Testing/Debug files
+stateofaffairs.PNG
 theme_workshop_azure/

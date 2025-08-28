@@ -2,6 +2,7 @@ site_name: Cloud Workshop
 site_description: Azure Cloud Workshop Documentation
 site_author: 40docs
 site_url: https://40docs.github.io/workshop_azure/
+copyright: "40docs Organization"
 
 # Repository
 repo_name: 40docs/workshop_azure
@@ -15,24 +16,70 @@ nav:
 # Theme configuration
 theme:
   name: material
+  custom_dir: theme
   logo: theme/fabric.svg
+  logo_dark: theme/fabric-white.svg
   favicon: theme/favicon.ico
-  palette:
-    - scheme: default
-      primary: red
-      accent: indigo
+  font:
+    text: Inter
+    code: Roboto Mono
   features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - navigation.footer
     - navigation.tabs
     - navigation.tabs.sticky
-    - content.code.copy
-    - content.action.edit
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
 
 # Markdown extensions
 markdown_extensions:
   - admonition
-  - codehilite
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
   - toc:
       permalink: true
+
+# Plugins
+plugins:
+  - search
+  - glightbox:
+      zoomable: true
 
 # Extra CSS and JavaScript
 extra_css:
@@ -42,3 +89,9 @@ extra_css:
 extra_javascript:
   - javascripts/extra.js
   - theme/custom.js
+
+# Social links
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/40docs

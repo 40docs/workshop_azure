@@ -16,7 +16,6 @@ nav:
 # Theme configuration
 theme:
   name: material
-  custom_dir: theme
   logo: fabric.svg
   logo_dark: fabric-white.svg
   favicon: favicon.ico

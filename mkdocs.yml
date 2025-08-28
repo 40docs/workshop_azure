@@ -17,9 +17,9 @@ nav:
 theme:
   name: material
   custom_dir: theme
-  logo: theme/fabric.svg
-  logo_dark: theme/fabric-white.svg
-  favicon: theme/favicon.ico
+  logo: fabric.svg
+  logo_dark: fabric-white.svg
+  favicon: favicon.ico
   font:
     text: Inter
     code: Roboto Mono
@@ -84,11 +84,11 @@ plugins:
 # Extra CSS and JavaScript
 extra_css:
   - stylesheets/extra.css
-  - theme/extra.css
+  - extra.css
 
 extra_javascript:
   - javascripts/extra.js
-  - theme/custom.js
+  - custom.js
 
 # Social links
 extra:

@@ -12,7 +12,7 @@ repo_url: https://github.com/40docs/workshop_azure
 theme:
   name: material
   custom_dir: theme
-  logo: fabric.svg
+  logo: fabric-white.svg
   logo_dark: fabric-white.svg
   favicon: favicon.ico
   font:

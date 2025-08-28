@@ -88,3 +88,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/40docs
+
+not_in_nav: |
+  index.md

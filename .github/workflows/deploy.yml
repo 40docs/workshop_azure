@@ -41,10 +41,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Clone 40docs theme
+    - name: Clone 40docs workshop theme
       run: |
-        git clone https://github.com/40docs/theme.git theme
-        echo "Theme cloned successfully"
+        git clone https://github.com/40docs/theme_workshop_azure.git theme
+        echo "Workshop theme cloned successfully"
         ls -la theme/
         # Ensure theme structure is correct for MkDocs
         echo "Theme structure ready for MkDocs build"

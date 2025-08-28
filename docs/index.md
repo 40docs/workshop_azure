@@ -5,5 +5,7 @@ hide:
   - footer
 ---
 
-<link rel="stylesheet" href="theme/index.css">
-<link rel="stylesheet" href="theme/landing-page.css">
+<style>
+@import url("index.css");
+@import url("landing-page.css");
+</style>

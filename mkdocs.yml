@@ -83,10 +83,10 @@ plugins:
 
 # Extra CSS and JavaScript
 extra_css:
-  - theme/extra.css
+  - extra.css
 
 extra_javascript:
-  - theme/custom.js
+  - custom.js
 
 # Social links
 extra:

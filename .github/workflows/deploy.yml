@@ -44,6 +44,8 @@ jobs:
     
     - name: Clone 40docs workshop theme
       run: |
+        # Remove any existing theme directory first
+        rm -rf theme
         git clone https://github.com/40docs/theme_workshop_azure.git theme
         echo "Workshop theme cloned successfully"
         ls -la theme/

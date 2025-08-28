@@ -1,0 +1,32 @@
+site_name: Cloud Workshop
+site_description: Azure Cloud Workshop Documentation
+site_author: 40docs
+site_url: https://40docs.github.io/workshop_azure/
+
+# Repository
+repo_name: 40docs/workshop_azure
+repo_url: https://github.com/40docs/workshop_azure
+
+# Navigation
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+
+# Theme configuration
+theme:
+  name: null
+  custom_dir: theme/
+
+# Markdown extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+
+# Extra CSS and JavaScript
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js

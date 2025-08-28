@@ -14,8 +14,18 @@ nav:
 
 # Theme configuration
 theme:
-  name: null
-  custom_dir: theme/
+  name: material
+  logo: theme/fabric.svg
+  favicon: theme/favicon.ico
+  palette:
+    - scheme: default
+      primary: red
+      accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.code.copy
+    - content.action.edit
 
 # Markdown extensions
 markdown_extensions:
@@ -27,6 +37,8 @@ markdown_extensions:
 # Extra CSS and JavaScript
 extra_css:
   - stylesheets/extra.css
+  - theme/extra.css
 
 extra_javascript:
   - javascripts/extra.js
+  - theme/custom.js

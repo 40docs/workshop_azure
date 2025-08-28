@@ -15,7 +15,7 @@ body {
 /* Center Fortinet logo on background */
 .md-content::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -25,7 +25,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 1;
+    z-index: 100;
     opacity: 0.9;
     filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.4));
+    pointer-events: none;
 }

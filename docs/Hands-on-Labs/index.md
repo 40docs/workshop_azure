@@ -4,33 +4,12 @@ This lab guide will walk you through creating a comprehensive Azure connectivity
 
 ## What You'll Build
 
-<div class="grid cards" markdown>
-
--   :material-cloud-outline: **Resource Group**
-
-    ---
-
-    Organize all Azure resources in a logical container
-
--   :material-lan: **Virtual Network**
-
-    ---
-
-    Create the network foundation with multiple subnets
-
--   :material-security: **Azure Bastion**
-
-    ---
-
-    Secure RDP/SSH connectivity without public IPs
-
--   :material-shield-check: **FortiGate HA Cluster**
-
-    ---
-
-    High-availability firewall deployment with load balancing
-
-</div>
+| Component | Description |
+|-----------|-------------|
+| **Resource Group** | Organize all Azure resources in a logical container |
+| **Virtual Network** | Create the network foundation with multiple subnets |
+| **Azure Bastion** | Secure RDP/SSH connectivity without public IPs |
+| **FortiGate HA Cluster** | High-availability firewall deployment with load balancing |
 
 ---
 

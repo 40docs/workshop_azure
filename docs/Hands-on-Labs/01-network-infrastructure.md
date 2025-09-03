@@ -137,4 +137,4 @@ The next step is to prepare the necessary network to enable connectivity to the 
 
 ---
 
-**Next Step:** [FortiGate Deployment](03-fortigate-ha.md) to add security and high availability to your network.
+**Next Step:** [FortiGate Deployment](02-fortigate-ha.md) to add security and high availability to your network.

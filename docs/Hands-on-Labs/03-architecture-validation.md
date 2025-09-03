@@ -233,4 +233,4 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 ---
 
-**Next Step:** [Configuration & Ops](05-advanced-operations.md) for ongoing management and troubleshooting.
+**Next Step:** [Configuration & Ops](04-advanced-operations.md) for ongoing management and troubleshooting.

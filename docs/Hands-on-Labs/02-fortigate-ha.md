@@ -185,4 +185,4 @@ Need to replicate the diagram below.
 
 ---
 
-**Next Step:** [Testing & Validation](04-architecture-validation.md) to validate your deployment and test connectivity flows.
+**Next Step:** [Testing & Validation](03-architecture-validation.md) to validate your deployment and test connectivity flows.

@@ -33,11 +33,11 @@ Before starting this lab, ensure you have:
 
 This hands-on lab is organized into the following sections:
 
-1. **[Resource Group Setup](01-resource-group.md)** - Set up the foundational container for all resources
-2. **[Network Setup](02-network-infrastructure.md)** - Create virtual networks, subnets, and Azure Bastion
-3. **[FortiGate Deployment](03-fortigate-ha.md)** - Deploy high-availability FortiGate firewalls with load balancers
-4. **[Testing & Validation](04-architecture-validation.md)** - Test spoke networks, virtual machines, and connectivity flows
-5. **[Configuration & Ops](05-advanced-operations.md)** - Advanced configuration, troubleshooting, and operational procedures
+1. **[Resource Group Setup](00-resource-group.md)** - Set up the foundational container for all resources
+2. **[Network Setup](01-network-infrastructure.md)** - Create virtual networks, subnets, and Azure Bastion
+3. **[FortiGate Deployment](02-fortigate-ha.md)** - Deploy high-availability FortiGate firewalls with load balancers
+4. **[Testing & Validation](03-architecture-validation.md)** - Test spoke networks, virtual machines, and connectivity flows
+5. **[Configuration & Ops](04-advanced-operations.md)** - Advanced configuration, troubleshooting, and operational procedures
 
 ## Expected Outcomes
 
@@ -64,4 +64,4 @@ Upon completion of this lab, you will have:
 
 ---
 
-Ready to begin? Start with **[Resource Group Setup](01-resource-group.md)** to build your Azure connectivity hub foundation.
+Ready to begin? Start with **[Resource Group Setup](00-resource-group.md)** to build your Azure connectivity hub foundation.

@@ -1,7 +1,5 @@
 # Azure Workshop
 
-## Overview
-
 This lab guide will walk you through creating a comprehensive Azure connectivity hub that manages all ingress and egress traffic for your deployment. You'll learn how to set up resource groups, virtual networks, Azure Bastion, and FortiGate firewalls in a high-availability configuration.
 
 ## What You'll Build

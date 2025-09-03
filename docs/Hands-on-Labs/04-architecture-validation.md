@@ -1,4 +1,4 @@
-# Architecture Validation & Testing
+# Testing & Validation
 
 In this section, we'll deploy spoke networks and test virtual machines to validate your connectivity hub architecture and ensure all components work together properly.
 
@@ -233,4 +233,4 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 ---
 
-**Next Step:** [Advanced Configuration & Operations](05-advanced-operations.md) for ongoing management and troubleshooting.
+**Next Step:** [Configuration & Ops](05-advanced-operations.md) for ongoing management and troubleshooting.

@@ -1,4 +1,4 @@
-# Advanced Configuration & Operations
+# Configuration & Ops
 
 This section covers advanced FortiGate configuration, troubleshooting procedures, and ongoing operational tasks for your connectivity hub.
 

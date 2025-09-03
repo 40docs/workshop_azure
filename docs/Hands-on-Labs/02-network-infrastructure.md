@@ -1,4 +1,4 @@
-# Building Network Infrastructure
+# Network Setup
 
 In this section, we'll create the network foundation for your connectivity hub, including the virtual network, Azure Bastion, and all required subnets.
 
@@ -137,4 +137,4 @@ The next step is to prepare the necessary network to enable connectivity to the 
 
 ---
 
-**Next Step:** [Deploying FortiGate High Availability Cluster](03-fortigate-ha.md) to add security and high availability to your network.
+**Next Step:** [FortiGate Deployment](03-fortigate-ha.md) to add security and high availability to your network.

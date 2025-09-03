@@ -1,4 +1,4 @@
-# Deploying FortiGate High Availability Cluster
+# FortiGate Deployment
 
 In this section, we'll deploy FortiGate firewalls in a high-availability configuration with load balancers to provide robust security for your connectivity hub.
 
@@ -185,4 +185,4 @@ Need to replicate the diagram below.
 
 ---
 
-**Next Step:** [Architecture Validation & Testing](04-architecture-validation.md) to validate your deployment and test connectivity flows.
+**Next Step:** [Testing & Validation](04-architecture-validation.md) to validate your deployment and test connectivity flows.

@@ -1,4 +1,4 @@
-# Creating Your Resource Group
+# Resource Group Setup
 
 A resource group is the foundational container for organizing all your Azure resources. Think of it as a logical folder that helps you manage and find your virtual machines, networks, security appliances, and other components more easily.
 
@@ -40,4 +40,4 @@ A resource group is the foundational container for organizing all your Azure res
 
 ---
 
-**Next Step:** [Building Network Infrastructure](02-network-infrastructure.md) to create the virtual network foundation.
+**Next Step:** [Network Setup](02-network-infrastructure.md) to create the virtual network foundation.

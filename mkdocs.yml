@@ -79,4 +79,4 @@ extra:
       link: https://github.com/40docs
 
 not_in_nav: |
-  index.md
+  /index.md

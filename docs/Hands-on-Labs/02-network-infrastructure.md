@@ -64,27 +64,27 @@ In the physical world, we have cables and switches to connect everything togethe
 
 20. Click on the blue Create a public IP address.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image13.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image13.png)
 
     Step 20
 
     Step19
 
-    ![](images/image12.emf)
+    > ![](images/image12.emf)
 
-    ![](images/image12.emf)
+    > ![](images/image12.emf)
 
     Step18
 
 21. Change the Name to pip-bas-hub-azlab then Click OK.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image14.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image14.png)
 
 22. Click the Next: IP addresses button at the bottom of the screen.
 
 23. Change the IP address to 10.2.0.0 /16 as shown below.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image15.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image15.png)
 
 24. After several minutes your screen will look similar to the screen shot below.
 
@@ -104,7 +104,7 @@ The next step is to prepare the necessary network to enable connectivity to the 
 
     Step 4
 
-    ![](images/image17.png)
+    > ![](images/image17.png)
 
     Step 2
 
@@ -118,7 +118,7 @@ The next step is to prepare the necessary network to enable connectivity to the 
 
 6.  Ensure the starting address is 10.2.2.0 and the Size is /24.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image18.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image18.png)
 
 7.  Please repeat the process of creating the remaining three subnets as per the table below:
 
@@ -133,7 +133,7 @@ The next step is to prepare the necessary network to enable connectivity to the 
 
 8.  Please confirm your results look like the screenshot below.
 
-    ![](images/image19.png)
+    > ![](images/image19.png)
 
 ---
 

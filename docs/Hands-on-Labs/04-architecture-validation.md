@@ -85,7 +85,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 12. Click Review and create at the bottom of the screen.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image42.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image42.png)
 
 26. Allow the validation to process.
 
@@ -170,7 +170,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 54. Click
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image51.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image51.png)
 
 55. Click Create at the bottom of the screen once the validation passes.
 

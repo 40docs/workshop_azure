@@ -75,7 +75,7 @@ We are now ready to deploy the HA FortiGates using a template.
 
 14. Ensure Availability Option is set to Availability Zones.
 
-    ![A castle on a cloud with trees and fire AI-generated content may be incorrect.](images/image25.png)
+    > ![A castle on a cloud with trees and fire AI-generated content may be incorrect.](images/image25.png)
 
 ## Understanding Availability Zones
 
@@ -104,7 +104,7 @@ Need to replicate the diagram below.
 
 20. Click Next.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image28.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image28.png)
 
     Step 19
 
@@ -142,7 +142,7 @@ Need to replicate the diagram below.
 
 20. Click create new under the External Load Balancer and edit the name to match the screenshot below.
 
-    ![](images/image31.png)
+    > ![](images/image31.png)
 
 21. Click OK at the bottom of the screen.
 
@@ -177,7 +177,7 @@ Need to replicate the diagram below.
     ha-direct
     ```
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image35.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image35.png)
 
 28. When your deployment is complete it will look similar to the screen shot below. This can take a few minutes to display.
 

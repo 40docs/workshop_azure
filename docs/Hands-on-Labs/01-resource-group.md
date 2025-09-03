@@ -10,7 +10,7 @@ A resource group is the foundational container for organizing all your Azure res
 
 2.  Click Create.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image3.png)
+    > ![A screenshot of a computer AI-generated content may be incorrect.](images/image3.png)
 
 3.  Choose your appropriate subscription.
 

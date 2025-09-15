@@ -50,11 +50,6 @@ Routing in Azure differs from traditional datacenter environments because it’s
 
     > ![A screenshot of a computer AI-generated content may be incorrect.](images/image11.png)
 
-    Step17
-
-    Step16
-
-    Step15
 
 ## Azure Bastion Setup
 
@@ -68,15 +63,11 @@ Routing in Azure differs from traditional datacenter environments because it’s
 
     > ![A screenshot of a computer AI-generated content may be incorrect.](images/image13.png)
 
-    Step 20
-
-    Step19
 
     > ![](images/image12.emf)
 
     > ![](images/image12.emf)
 
-    Step18
 
 21. Change the Name to pip-bas-hub-azlab then Click OK.
 
@@ -104,13 +95,10 @@ The next step is to prepare the necessary network to enable connectivity to the 
 
 2.  Click on Subnets.
 
-    Step 4
 
     > ![](images/image17.png)
 
-    Step 2
 
-    Step 1
 
 3.  Notice the subnets we created earlier are listed here. Let's create four new subnets.
 

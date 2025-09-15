@@ -18,6 +18,8 @@ In this section, we'll create the network foundation for your connectivity hub, 
 
 In the physical world, we have cables and switches to connect everything together! But how do we build network connectivity in Azure? We use the concept of a virtual network and subnets to build a network between our virtual machines and appliances.
 
+Routing in Azure differs from traditional datacenter environments because it’s based on **system-managed routing tables** rather than fully manual configurations. In an on-premise setup, firewalls and routers typically control all subnet-to-subnet routing directly, and VPNs often require explicit routes (static or dynamically advertised). In Azure, however, each virtual network (VNet) automatically creates routes between its subnets, meaning traffic **could** bypass a firewall unless you specifically configure User-Defined Routes (**UDR**s) to force it through. Similarly, when using VPN gateways, Azure handles the propagation of routes into the VNet, but you’ll often need to fine-tune UDRs to ensure traffic flows through security appliances like FortiGate rather than taking the default system path. This shift from hardware-centric to platform-managed routing is a key difference to keep in mind when designing secure architectures.
+
 ## Creating the Hub Network
 
 10. Click Create.
@@ -56,7 +58,7 @@ In the physical world, we have cables and switches to connect everything togethe
 
 ## Azure Bastion Setup
 
-> We are now going to create an Azure Bastion which is a paid service that provides secure RDP/SSH connectivity to your virtual machines over TLS. When you connect via Azure Bastion, your virtual machines do not need a public IP address.
+> We are now going to create an Azure Bastion which is a **paid** service that provides secure RDP/SSH connectivity to your virtual machines over TLS. When you connect via Azure Bastion, your virtual machines do not need a public IP address.
 
 18. Click Enable Bastion.
 
@@ -94,7 +96,7 @@ In the physical world, we have cables and switches to connect everything togethe
 
 ## Subnet Architecture
 
-The next step is to prepare the necessary network to enable connectivity to the FortiGate-VMs. Four interfaces are most commonly used, one for the dedicated public or untrusted zone, the private or trusted zone, out-of-band management, and the dedicated channel for session and cluster syncing (as required).
+The next step is to prepare the necessary network to enable connectivity to the FortiGate-VMs. Four interfaces are most commonly used, one for the dedicated public or untrusted zone, one for the private or trusted zone, one for out-of-band management, and one for the dedicated channel for session and cluster syncing (as required).
 
 ## Subnet Configuration
 

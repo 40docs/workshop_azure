@@ -48,7 +48,7 @@ jobs:
       run: |
         # Remove any existing theme directory first
         rm -rf theme
-        git clone https://github.com/40docs/theme_workshop_azure.git theme
+        git clone https://github.com/40docs/workshop_theme_template.git theme
         echo "Workshop theme cloned successfully"
         ls -la theme/
         # Ensure theme structure is correct for MkDocs

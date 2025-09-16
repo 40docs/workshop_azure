@@ -62,6 +62,11 @@ Upon completion of this lab, you will have:
     - Screenshots are provided throughout to help verify your progress
     - If you encounter issues, refer to the troubleshooting section in Advanced Operations
 
+
+## Considerations
+
+When setting up your FortiGate lab in Azure, it’s important to use a personal or test Azure subscription rather than your company’s production account. This avoids unnecessary costs, security risks, or accidental conflicts with corporate resources. Additionally, always remember to spin down or delete lab resources when you’re not actively using them—virtual machines, storage, and networking services continue to incur charges as long as they’re running, even if idle. This practice keeps your lab environment cost-efficient and prevents surprises on your bill.
+
 ---
 
 Ready to begin? Start with **[Resource Group Setup](00-resource-group.md)** to build your Azure connectivity hub foundation.

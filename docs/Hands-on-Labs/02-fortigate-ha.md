@@ -1,6 +1,6 @@
 # FortiGate Deployment
 
-In this section, we'll deploy FortiGate firewalls in a high-availability configuration with load balancers to provide robust security for your connectivity hub.
+In this section, we'll deploy FortiGate firewalls in a high-availability configuration with load balancers to provide robust security for your connectivity hub. You may have heard of the name Load Balancer (LB) sandwich - we are deploying the firewalls between two LB instances to ensure symetric flows of traffic between services behind and infront of the firewalls.
 
 ## On this page
 - [High Availability Overview](#high-availability-overview)
@@ -13,7 +13,7 @@ In this section, we'll deploy FortiGate firewalls in a high-availability configu
 
 ## High Availability Overview
 
-We are now ready to deploy the HA FortiGates using a template.
+We are now ready to deploy the HA FortiGates using a template. For additional information regarding the various templates available and their respective SLAs for failover please see [FortiGate Azure Addministration Guide.](https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-administration-guide/983245)
 
 ## Template Deployment
 
@@ -35,9 +35,6 @@ We are now ready to deploy the HA FortiGates using a template.
 
     > ![A screenshot of a computer AI-generated content may be incorrect.](images/image23.png)
 
-    Step 5
-
-    Step 4
 
 ## Configuration Parameters
 
@@ -57,19 +54,6 @@ We are now ready to deploy the HA FortiGates using a template.
 
     > ![](images/image24.png)
 
-    Step 11
-
-    Step 7
-
-    Step 8
-
-    Step 11
-
-    Step 10
-
-    Step 9
-
-    Step 6
 
 13. Ensure FortiGate Image Version is set to 7.4.8.
 
@@ -106,31 +90,26 @@ Need to replicate the diagram below.
 
     > ![A screenshot of a computer AI-generated content may be incorrect.](images/image28.png)
 
-    Step 19
 
-    Step 18
+21.  Click Next.
 
-    Step 17
+22. We will now map the subnets we created earlier to the FortiGate.
 
-9.  Click Next.
+23. Click on the drop down menu beside Virtual network and select vnet-hub-azlab.
 
-10. We will now map the subnets we created earlier to the FortiGate.
+24. Click on the dropdown menu beside External subnet and select Public.
 
-11. Click on the drop down menu beside Virtual network and select vnet-hub-azlab.
+25. Click on the dropdown menu beside Internal subnet and select Private
 
-12. Click on the dropdown menu beside External subnet and select Public.
+26. Click on the HA Sync subnet dropdown and select HA_Intra-Cluster.
 
-13. Click on the dropdown menu beside Internal subnet and select Private
+27. Click on the HA Management subnet dropdown and select Management.
 
-14. Click on the HA Sync subnet dropdown and select HA_Intra-Cluster.
+28. Notice we are also creating a new subnet called Protected A subnet; leave it a the default setting.
 
-15. Click on the HA Management subnet dropdown and select Management.
+29. If needed, scroll down the Accelerated networking and select disabled
 
-16. Notice we are also creating a new subnet called Protected A subnet; leave it a the default setting.
-
-17. If needed, scroll down the Accelerated networking and select disabled
-
-18. Confirm your configuration looks like the screenshot below.
+30. Confirm your configuration looks like the screenshot below.
 
     > ![](images/image29.png)
     >
@@ -138,15 +117,15 @@ Need to replicate the diagram below.
 
 ## Load Balancer Setup
 
-19. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces.
+31. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces.
 
-20. Click create new under the External Load Balancer and edit the name to match the screenshot below.
+32. Click create new under the External Load Balancer and edit the name to match the screenshot below.
 
     > ![](images/image31.png)
 
-21. Click OK at the bottom of the screen.
+33. Click OK at the bottom of the screen.
 
-22. Repeat this process for FortiGate A and B management and match the name in the screen shots below.
+34. Repeat this process for FortiGate A and B management and match the name in the screen shots below.
 
     **FortiGate A** and **FortiGate B**:
 
@@ -154,19 +133,19 @@ Need to replicate the diagram below.
 
     > ![](images/image33.png)
 
-23. When you are finished, ensure your configuration looks like the screenshot below.
+35. When you are finished, ensure your configuration looks like the screenshot below.
 
     > ![](images/image34.png)
 
-24. Click Next at the bottom of the page until you reach the Review and create page.
+36. Click Next at the bottom of the page until you reach the Review and create page.
 
-25. Allow the final validation to run. This may take up to 30 seconds.
+37. Allow the final validation to run. This may take up to 30 seconds.
 
-26. Click Create at the bottom of the page.
+38. Click Create at the bottom of the page.
 
 ## Deployment Verification
 
-27. Eventually your screen will refresh show something similar to the one below.
+39. Eventually your screen will refresh show something similar to the one below.
 
     ```bash
     config system ha
@@ -179,7 +158,7 @@ Need to replicate the diagram below.
 
     > ![A screenshot of a computer AI-generated content may be incorrect.](images/image35.png)
 
-28. When your deployment is complete it will look similar to the screen shot below. This can take a few minutes to display.
+40. When your deployment is complete it will look similar to the screen shot below. This can take a few minutes to display.
 
     > ![A screenshot of a computer AI-generated content may be incorrect.](images/image36.png)
 

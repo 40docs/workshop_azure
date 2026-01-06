@@ -13,13 +13,6 @@ This lab guide will walk you through creating a comprehensive Azure connectivity
     | **FortiGate HA Cluster** | High-availability firewall deployment with load balancing |
 
 ---
-
-## Creating your "Connectivity Hub"
-
-![](images/image1.jpeg)
-
-Do you remember that old phrase "like finding a needle in a haystack"? It alludes to something that is hard to find. You will see that Azure has several resources available to you. A resource group is used to logically organize resources such as virtual machines, virtual networks, security appliances etc. Using a resource group makes it easier to organize and find your provisioned resources in Azure. We are going to start by creating a resource group for our connectivity hub that manages all ingress and egress traffic into our deployment.
-
 ## Prerequisites
 
 Before starting this lab, ensure you have:
@@ -33,11 +26,10 @@ Before starting this lab, ensure you have:
 
 This hands-on lab is organized into the following sections:
 
-1. **[Resource Group Setup](00-resource-group.md)** - Set up the foundational container for all resources
-2. **[Network Setup](01-network-infrastructure.md)** - Create virtual networks, subnets, and Azure Bastion
-3. **[FortiGate Deployment](02-fortigate-ha.md)** - Deploy high-availability FortiGate firewalls with load balancers
-4. **[Testing & Validation](03-architecture-validation.md)** - Test spoke networks, virtual machines, and connectivity flows
-5. **[Configuration & Ops](04-advanced-operations.md)** - Advanced configuration, troubleshooting, and operational procedures
+1. **[Create a Connectivity Hub](00-Task1-Create-the-Hub.md)** - Set up the foundational container for all resources
+3. **[FortiGate Deployment](02-task2-fortigate-ha.md)** - Deploy high-availability FortiGate firewalls with load balancers
+4. **[Testing & Validation](03Task3: Routing.md)** - Test spoke networks, virtual machines, and connectivity flows
+5. **[Configuration & Ops](05-advanced-operations.md)** - Advanced configuration, troubleshooting, and operational procedures
 
 ## Expected Outcomes
 
@@ -69,4 +61,4 @@ When setting up your FortiGate lab in Azure, it’s important to use a personal 
 
 ---
 
-Ready to begin? Start with **[Resource Group Setup](00-resource-group.md)** to build your Azure connectivity hub foundation.
+Ready to begin? Start with **[Create the Connectivity Hub](00-Task1-Create-the-Hub.md)** to build your Azure connectivity hub foundation.

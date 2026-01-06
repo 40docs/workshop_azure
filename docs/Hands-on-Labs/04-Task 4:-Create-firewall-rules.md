@@ -1,4 +1,4 @@
-## Task 4: Modify Firewall Rules to Permit North-South Traffic
+# Task 4: Modify Firewall Rules to Permit North-South Traffic
 ![](images/image55.png)
 Now that we have peered our VNets and built our routing tables everything is ready, right? Not quite! Remember, we pointed the UDR towards the load balancer, which then passes traffic to the FortiGate for inspection. We need to set a policy in the firewall to permit traffic. Let’s start with North-South traffic like traffic destined to the Internet.
 

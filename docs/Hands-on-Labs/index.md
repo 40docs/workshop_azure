@@ -39,7 +39,7 @@ Upon completion of this lab, you will have:
 - ✅ High-availability FortiGate firewall cluster
 - ✅ Secure remote access via Azure Bastion
 - ✅ Spoke network architecture for application deployment
-- ✅ Comprehensive understanding of Azure network security
+
 
 ## Time Estimate
 

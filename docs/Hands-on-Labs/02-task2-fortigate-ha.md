@@ -67,7 +67,10 @@ For additional information regarding the various templates available and their r
 
     ![A castle on a cloud with trees and fire AI-generated content may be incorrect.](images/image25.png)
 
-    Wouldn’t it be nice if we all had a spare home? If something were to happen to one of them, we just move over to the other one? This analogy loosely explains availability zones as they help create redundancy and high availability. How? According to learn.microsoft.com Availability Zones are separated groups of datacenters within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones. 
+    Wouldn’t it be nice if we all had a spare home? If something were to happen to one of them, we just move over to the other one! This analogy loosely explains availability zones as they help create redundancy and high availability. Take a look at the Azure Region Map below: 
+
+
+    How? According to learn.microsoft.com Availability Zones are separated groups of datacenters within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones. 
 
     Look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other! 
 
@@ -77,40 +80,40 @@ For additional information regarding the various templates available and their r
     
     ## Licensing Configuration
 
-15. Scroll down.
+16. Scroll down.
 
-16. Check the 'My organization is using the FortiFlex subscription service' box.
+17. Check the 'My organization is using the FortiFlex subscription service' box.
 
-17. You were provided FortFlex tokens, you will use those tokens to license these firewalls. **Do not copy the tokens in the screenshot below**.
+18. You were provided FortFlex tokens, you will use those tokens to license these firewalls. **Do not copy the tokens in the screenshot below**.
 
-18. Enter one of the provided tokens for FortiGate A.
+19. Enter one of the provided tokens for FortiGate A.
 
-19. Enter one of the provided tokens for FortiGate B.
+20. Enter one of the provided tokens for FortiGate B.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image28.png)
 
-20. Click Next.
+21. Click Next.
 
-21. We will now map the subnets we created earlier to the FortiGate.
+22. We will now map the subnets we created earlier to the FortiGate.
 
-22. Click on the dropdown menu beside Virtual network and select vnet-hub-azlab.
+23. Click on the dropdown menu beside Virtual network and select vnet-hub-azlab.
 
-23. Click on the dropdown menu beside External subnet and select Public.
+24. Click on the dropdown menu beside External subnet and select Public.
 
-24. Click on the dropdown menu beside Internal subnet and select Private
+25. Click on the dropdown menu beside Internal subnet and select Private
 
-25. Click on the HA Sync subnet dropdown and select HA_Intra-Cluster.
+26. Click on the HA Sync subnet dropdown and select HA_Intra-Cluster.
 
-26. Click on the HA Management subnet dropdown and select Management.
+27. Click on the HA Management subnet dropdown and select Management.
 
-27. Notice we are also creating a new subnet called Protected A subnet; leave it a the default setting.
+28. Notice we are also creating a new subnet called Protected A subnet; leave it a the default setting.
 
-28. If needed, scroll down the Accelerated networking and select disabled.
+29. If needed, scroll down the Accelerated networking and select disabled.
 
     !!! Note "Azure Accelerated Networking"
         Azure Accelerated Networking uses hardware-based virtualization to directly link a VM's network interface (NIC) to its network, bypassing the host's virtual switch and improving performance. We don’t need this in our lab. In a production enviroment you can turn on accellerated network to tell Azure to deploy the SR-IOV NIC driver rather than the standard driver, giving better performance.
 
-29. Confirm your configuration looks like the screenshot below.
+30. Confirm your configuration looks like the screenshot below.
 
      ![](images/image29.png)
     
@@ -118,22 +121,22 @@ For additional information regarding the various templates available and their r
 
     ## Load Balancer Setup
 
-30. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces.
+31. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces.
 
     Your Quest Map
     
     ![](images/youarehere5.jpg)
 
-31. Click create new under the External Load Balancer and edit the name to match the screenshot below.
+32. Click create new under the External Load Balancer and edit the name to match the screenshot below.
 
     ![](images/image31.png)
 
-32. Click OK at the bottom of the screen.
+33. Click OK at the bottom of the screen.
 
      Your Quest Map
     ![](images/youarehere6.jpg)
 
-33. Repeat this process for FortiGate A and B management and match the name in the screen shots below.
+34. Repeat this process for FortiGate A and B management and match the name in the screen shots below.
 
     **FortiGate A**
 
@@ -143,23 +146,23 @@ For additional information regarding the various templates available and their r
 
     ![](images/image33.png)
 
-34. When you are finished, ensure your configuration looks like the screenshot below.
+35. When you are finished, ensure your configuration looks like the screenshot below.
 
     ![](images/image34.png)
 
-35. Click Next at the bottom of the page until you reach the Review and create page.
+36. Click Next at the bottom of the page until you reach the Review and create page.
 
-36. Allow the final validation to run. This may take up to 30 seconds.
+37. Allow the final validation to run. This may take up to 30 seconds.
 
-37. Click Create at the bottom of the page.
+38. Click Create at the bottom of the page.
 
     ## Deployment Verification
 
-38. Eventually your screen will refresh show something similar to the one below.
+39. Eventually your screen will refresh show something similar to the one below.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image35.png)
 
-39. When your deployment is complete it will look similar to the screen shot below. This can take a few minutes to display.
+40. When your deployment is complete it will look similar to the screen shot below. This can take a few minutes to display.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image36.png)
 

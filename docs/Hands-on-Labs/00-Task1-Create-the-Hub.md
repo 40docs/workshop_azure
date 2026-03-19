@@ -78,11 +78,11 @@ Your Quest Map
 
 14. Click on the Virtual Network box.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image9a.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images/image9.png)
     
 15. Ensure you have the correct subscription and then click Create.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image10.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images/image9a.png)
 
 16. Type `vnet-hub-azlab` in the Virtual Network name textbox.
 

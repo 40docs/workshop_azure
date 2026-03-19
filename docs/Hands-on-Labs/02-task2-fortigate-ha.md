@@ -69,14 +69,18 @@ For additional information regarding the various templates available and their r
 
     Wouldn’t it be nice if we all had a spare home? If something were to happen to one of them, we just move over to the other one! This analogy loosely explains availability zones as they help create redundancy and high availability. Take a look at the Azure Region Map below: 
 
+    ![](images/Azuremap.png)
 
-    How? According to learn.microsoft.com Availability Zones are separated groups of datacenters within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones. 
+    Do you see that Azure has data centers all over the world? Neat eh!? Azure groups data centers into regions. For example, Canada has two Regions: Canada Central and Canta East. Many Azure regions provide availability zones. According to learn.microsoft.com Availability Zones are separated groups of datacenters within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones.
 
-    Look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other! 
+    ![](images/Regions.png)
+
+    To apply these concepts to our enviroment, look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other and have our passive FortiGate take over. 
 
     ![active/passive design](images/HAzones.jpg)
 
-    Are availability zones the only form of High availability? No, there is also something called an Avaiability Set, you can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
+    Are availability zones the only form of High availability? No, there is also something called an Avaiability Set. An availability set is deploying HA within a single date center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
+    ![](images/Availabilityset.png)
     
     ## Licensing Configuration
 

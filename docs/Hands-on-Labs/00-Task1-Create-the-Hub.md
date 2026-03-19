@@ -22,35 +22,36 @@ Your Quest Map
 1. In the Azure subscription you have decided to use, click on Resource Group under Azure services. 
 
     ![](images/image2.png)
+    ![](images/image1a.png)
 
-2. Click Create.
+3. Click Create.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image3.png)
 
-3. Choose your appropriate subscription.
+4. Choose your appropriate subscription.
 
     !!! note 
          Your subscription may look different from the screenshots in this lab guide. 
 
-4. Enter `rg-hub-azlab` in the Resource Group name.
+5. Enter `rg-hub-azlab` in the Resource Group name.
 
-5. Under region select Canada Central.
+6. Under region select Canada Central.
 
     !!! note "Did you know?"
         A region in Azure is defined as a collection of Azure data centers connected by a high-capacity, low-latency network, all within a specific geography, to provide local access to cloud services.
 
     ![](images/image4.png)
 
-6. Click Review + create at the bottom of the screen.
+7. Click Review + create at the bottom of the screen.
 
     ![A blue and white box with text AI-generated content may be incorrect.](images/image5.png)
 
-7. At the bottom of the screen click the blue Create button.
+8. At the bottom of the screen click the blue Create button.
 
-8. A window will pop up in the right-hand corner, saying Resource group created. Click on the Go to resource group button. 
+9. A window will pop up in the right-hand corner, saying Resource group created. Click on the Go to resource group button. 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image6.png)
 
-9. Now that we have created a resource group, we can start adding resources to it. The first thing we are going to create is the virtual network.
+10. Now that we have created a resource group, we can start adding resources to it. The first thing we are going to create is the virtual network.
 
     In this section, we'll create the network foundation for your connectivity hub, including the virtual network, Azure Bastion, and all required subnets.
 
@@ -66,27 +67,27 @@ Your Quest Map
     Your Quest Map
      ![](images/Youarehere2.jpg)
 
-10. Click Create.
+11. Click Create.
 
     ![](images/image7.png)
 
-11. You will be taken to the Marketplace.
+12. You will be taken to the Marketplace.
 
-12. In the search field type virtual network and hit enter.
+13. In the search field type virtual network and hit enter.
 
-13. Click on the Virtual Network box.
+14. Click on the Virtual Network box.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image9.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images/image9a.png)
     
-14. Ensure you have the correct subscription and then click Create.
+15. Ensure you have the correct subscription and then click Create.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image10.png)
 
-15. Type `vnet-hub-azlab` in the Virtual Network name textbox.
+16. Type `vnet-hub-azlab` in the Virtual Network name textbox.
 
-16. Ensure Region is set to Canada Central.
+17. Ensure Region is set to Canada Central.
 
-17. Click Next Security. (Note the button may just say Next)
+18. Click Next Security. (Note the button may just say Next)
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image11.png)
     
@@ -98,33 +99,33 @@ Your Quest Map
 
      ![](images/Youarehere3.jpg)
 
-18. Click Enable Bastion checkbox.
+19. Click Enable Bastion checkbox.
 
-19. Rename it to `bastion-hub-azlab`.
+20. Rename it to `bastion-hub-azlab`.
 
-20. Click on the blue Create a public IP address.
+21. Click on the blue Create a public IP address.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image13.png)
     
-21. Change the Name to `pip-bas-hub-azlab` then click OK.
+22. Change the Name to `pip-bas-hub-azlab` then click OK.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image14.png)
 
-22. Click the Next: IP addresses button at the bottom of the screen. (Note your button may just say Next)
+23. Click the Next: IP addresses button at the bottom of the screen. (Note your button may just say Next)
 
-23. Change the IP address to 10.2.0.0 /16 as shown below.
+24. Change the IP address to 10.2.0.0 /16 as shown below.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image15.png)
 
-24. Click Review + Create.
+25. Click Review + Create.
     
     ![](images/image15a.png)
 
-25. Double-check the information presented matches what we’ve intended to configure so far and then click the blue create button.
+26. Double-check the information presented matches what we’ve intended to configure so far and then click the blue create button.
 
-26. After several minutes your screen will look similar to the screenshot below.
+27. After several minutes your screen will look similar to the screenshot below.
 
-27. Click Go to resource.
+28. Click Go to resource.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image16.png)
 

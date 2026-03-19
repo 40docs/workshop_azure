@@ -1,5 +1,5 @@
 # Task 1: Create Your Connectivity Hub
-![](images/image1.jpeg)
+
 ## On this page
 - [Virtual Network Planning](#virtual-network-planning)
 - [Creating the Hub Network](#creating-the-hub-network)
@@ -7,6 +7,8 @@
 - [Subnet Architecture](#subnet-architecture)
 - [Subnet Configuration](#subnet-configuration)
 - [Network Validation](#network-validation)
+
+![](images/image1.jpeg)
 
 Do you remember that old phrase “like finding a needle in a haystack”? It alludes to something that is hard to find. Azure has several resources available to you. A resource group is used to logically organize resources such as virtual machines, virtual networks, security appliances etc. Using a resource group makes it easier to organize and find your provisioned resources in Azure. We are going to start by creating a resource group for our connectivity hub that manages all ingress and egress traffic into our deployment.  
 

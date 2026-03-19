@@ -22,6 +22,7 @@ Your Quest Map
 1. In the Azure subscription you have decided to use, click on Resource Group under Azure services. 
 
     ![](images/image2.png)
+   
     ![](images/image1a.png)
 
 3. Click Create.

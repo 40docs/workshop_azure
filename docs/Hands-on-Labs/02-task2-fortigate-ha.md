@@ -8,7 +8,7 @@ This is the simplest building block, a single FortiGate VM is used and provides 
 
 ## Active-passive HA with SDN connector failover
 
-Active-passive HA with SDN connector failover: This design deploys two FortiGate-VMs in active-passive mode connected using the unicast FGCP HA protocol. This protocol synchronizes the configuration. On failover, the passive FortiGate takes control and issues API calls to Azure to shift the public IP address and update the internal user-defined routing to itself. Shifting the public IP address and gateway IP addresses of the routes takes time for Azure to complete. Microsoft provides a general architecture. In FortiGate's case, the API calls logic is built-in instead of requiring additional outside logic like Azure Functions or ZooKeeper nodes
+Active-passive HA with SDN connector failover: This design deploys two FortiGate-VMs in active-passive mode connected using the unicast FGCP HA protocol. This protocol synchronizes the configuration. On failover, the passive FortiGate takes control and issues API calls to Azure to shift the public IP address and update the internal user-defined routing to itself. Shifting the public IP address and gateway IP addresses of the routes takes time for Azure to complete. 
 
 ![](images/APSND.jpg)
 

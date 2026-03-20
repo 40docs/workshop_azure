@@ -94,8 +94,7 @@ Your Quest Map
     
     ## Azure Bastion Setup
 
-    We are now going to create an Azure Bastion which is a **paid** service that provides secure RDP/SSH connectivity to your virtual machines over TLS. When you connect via Azure Bastion, your virtual machines do not need a public IP address. (Pssst! Did you know public IP address cost money in Azure?)
-    
+    We are now going to create an Azure Bastion which is a **paid** service that provides secure RDP/SSH connectivity to your virtual machines over TLS. When you connect via Azure Bastion, your virtual machines do not need a public IP address. (Pssst! Did you know public IP address cost money in Azure?) For clairification, without the Azure Bastion, if I needed to RDP/SSH into 30 different virtual machines I would need to purchase 30 different public IP addresses. The Bastion acts as a jump box to access the 30 virtual machines so only one IP address is needed.
     Your Quest Map
 
      ![](images/Youarehere3.jpg)

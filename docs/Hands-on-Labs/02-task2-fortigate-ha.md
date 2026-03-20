@@ -10,19 +10,19 @@ This is the simplest building block, a single FortiGate VM is used and provides 
 
 Active-passive HA with SDN connector failover: This design deploys two FortiGate-VMs in active-passive mode connected using the unicast FGCP HA protocol. This protocol synchronizes the configuration. On failover, the passive FortiGate takes control and issues API calls to Azure to shift the public IP address and update the internal user-defined routing to itself. Shifting the public IP address and gateway IP addresses of the routes takes time for Azure to complete. Microsoft provides a general architecture. In FortiGate's case, the API calls logic is built-in instead of requiring additional outside logic like Azure Functions or ZooKeeper nodes
 
-![](images/APSDN.png)
+![](images/APSDN.jpg)
 
 ## Active-active with external and internal Azure LB
 
 This design deploys two FortiGate-VMs in active-active as two independent systems. In this setup, the Azure LB handles traffic failover using a health probe towards the FortiGate-VMs. You configure the public IP addresses on the Azure LB. The public IP addresses provide ingress and egress flows with inspection from the FortiGate. You can use a FortiManager or local replication to synchronize configuration in this setup.
 
-![](images/AALB.png)
+![](images/AALB.jpg)
 
 ## Active-passive with external and internal Azure load balancer (LB)
 
 This design deploys two FortiGate-VMs in active-passive mode connected using unicast FortiGate clustering protocol (FGCP) HA protocol. In this setup, the Azure LB handles traffic failover using a health probe towards the FortiGate-VMs. The failover times are based on the health probe of the Azure LB: 2 failed attempts per 5 seconds with a maximum of 15 seconds. You configure the public IP addresses on the Azure LB. The public IP addresses provide ingress and egress flows with inspection from the FortiGate. This is what we deploy in our lab!
 
-![](images/APLoadBal.png)
+![](images/APLoadBal.jpg)
 In this section, we'll deploy FortiGate firewalls in a high-availability configuration with load balancers to provide robust security for your connectivity hub. You may have heard of the name Load Balancer (LB) sandwich - we are deploying the firewalls between two LB instances to ensure symetric flows of traffic between services behind and infront of the firewalls.
 
 ## On this page

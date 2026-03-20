@@ -1,5 +1,28 @@
 # Task 2: FortiGate Deployment
+One way of deploying FortiGates in Azure is to use the predefined templates in Market Place. A template decides how many FortiGates to deploy, how to design networking, and how to conduct High Avaiability. Let's look at the four templates available for deployment.
 
+## Single FortiGate VM 
+
+This is the simplest building block, a single FortiGate VM is used and provides no HA at the FortiGate level. This single FortiGate-VM processes all the traffic and becomes a single point of failure during operations and upgrades. You can also use this block in an architecture with multiple regions where a FortiGate is deployed in each region. This setup provides an SLA of 99.9% when using a premium SSD disk.
+![](images/singlevm.png)
+
+## Active-passive HA with SDN connector failover
+
+Active-passive HA with SDN connector failover: This design deploys two FortiGate-VMs in active-passive mode connected using the unicast FGCP HA protocol. This protocol synchronizes the configuration. On failover, the passive FortiGate takes control and issues API calls to Azure to shift the public IP address and update the internal user-defined routing to itself. Shifting the public IP address and gateway IP addresses of the routes takes time for Azure to complete. Microsoft provides a general architecture. In FortiGate's case, the API calls logic is built-in instead of requiring additional outside logic like Azure Functions or ZooKeeper nodes
+
+![](images/APSDN.png)
+
+## Active-active with external and internal Azure LB
+
+This design deploys two FortiGate-VMs in active-active as two independent systems. In this setup, the Azure LB handles traffic failover using a health probe towards the FortiGate-VMs. You configure the public IP addresses on the Azure LB. The public IP addresses provide ingress and egress flows with inspection from the FortiGate. You can use a FortiManager or local replication to synchronize configuration in this setup.
+
+![](images/AALB.png)
+
+## Active-passive with external and internal Azure load balancer (LB)
+
+This design deploys two FortiGate-VMs in active-passive mode connected using unicast FortiGate clustering protocol (FGCP) HA protocol. In this setup, the Azure LB handles traffic failover using a health probe towards the FortiGate-VMs. The failover times are based on the health probe of the Azure LB: 2 failed attempts per 5 seconds with a maximum of 15 seconds. You configure the public IP addresses on the Azure LB. The public IP addresses provide ingress and egress flows with inspection from the FortiGate. This is what we deploy in our lab!
+
+![](images/APLoadBal.png)
 In this section, we'll deploy FortiGate firewalls in a high-availability configuration with load balancers to provide robust security for your connectivity hub. You may have heard of the name Load Balancer (LB) sandwich - we are deploying the firewalls between two LB instances to ensure symetric flows of traffic between services behind and infront of the firewalls.
 
 ## On this page
@@ -82,6 +105,12 @@ For additional information regarding the various templates available and their r
     Are availability zones the only form of High availability? No, there is also something called an Avaiability Set. An availability set is deploying HA within a single date center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
     ![](images/Availabilityset.png)
     
+
+ Microsoft offers different SLAs on Azure based on the deployment that you use:
+* Availability zone (AZ) (different datacenter in the same region): 99.99%
+* Availability set (different rack and power): 99.95%
+* Single VM with premium SSD: 99.9% (no HA)
+  
     ## Licensing Configuration
 
 16. Scroll down.

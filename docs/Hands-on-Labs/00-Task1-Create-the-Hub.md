@@ -108,10 +108,7 @@ Your Quest Map
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image13.png)
     
-23. Change the Name to `pip-bas-hub-azlab` then click OK.
-
-   !!! note
-      You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
+23. Change the Name to `pip-bas-hub-azlab` then click OK. You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image14a.png)
 

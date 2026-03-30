@@ -88,44 +88,48 @@ Your Quest Map
 
 17. Ensure Region is set to Canada Central.
 
-18. Click Next Security. (Note the button may just say Next)
+18. Click Next.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image11.png)
     
     ## Azure Bastion Setup
 
-    We are now going to create an Azure Bastion which is a **paid** service that provides secure RDP/SSH connectivity to your virtual machines over TLS. When you connect via Azure Bastion, your virtual machines do not need a public IP address. (Pssst! Did you know public IP address cost money in Azure?) For clairification, without the Azure Bastion, if I needed to RDP/SSH into 30 different virtual machines I would need to purchase 30 different public IP addresses. The Bastion acts as a jump box to access the 30 virtual machines so only one IP address is needed.
+    We are now going to create an Azure Bastion which is a **paid** service that provides secure RDP/SSH connectivity to your virtual machines over TLS. Azure Bastion allows you to RDP/SSH into your various virtual machines without having to assign a public IP to every virtual machine (Psst! Public IP addresses cost money in Azure!). Using a Bastion helps keep your costs lower as you only need one public IP address instead of one for each virtual maching you want to access!
+    
     Your Quest Map
 
      ![](images/Youarehere3.jpg)
 
-19. Click Enable Bastion checkbox.
+20. Click Enable Bastion checkbox.
 
-20. Rename it to `bastion-hub-azlab`.
+21. Rename it to `bastion-hub-azlab`.
 
-21. Click on the blue Create a public IP address.
+22. Click on the blue Create a public IP address.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image13.png)
     
-22. Change the Name to `pip-bas-hub-azlab` then click OK.
+23. Change the Name to `pip-bas-hub-azlab` then click OK.
+
+    !!! note
+       You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image14.png)
 
-23. Click the Next: IP addresses button at the bottom of the screen. (Note your button may just say Next)
+25. Click the Next button on the bottom of the screen.
 
-24. Change the IP address to 10.2.0.0 /16 as shown below.
+26. Change the IP address to 10.2.0.0 /16 as shown below.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image15.png)
 
-25. Click Review + Create.
+27. Click Review + Create.
     
     ![](images/image15a.png)
 
-26. Double-check the information presented matches what we’ve intended to configure so far and then click the blue create button.
+28. Double-check the information presented matches what we’ve intended to configure so far and then click the blue create button.
 
-27. After several minutes your screen will look similar to the screenshot below.
+29. After 10-15 minutes your screen will look similar to the screenshot below. (This might be a good time to grab a coffee or tea!)
 
-28. Click Go to resource.
+30. Click Go to resource.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image16.png)
 

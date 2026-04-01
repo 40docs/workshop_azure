@@ -50,7 +50,7 @@ For additional information regarding the various templates available and their r
 
 ## Template Deployment
 
-1. In the top left corner of the screen click on rg-hub-azlab in the breadcrumb trail. If you don't see the breadcrumb trail, search for the name of your resource group in the text box. You can see an example of the search box in the screenshot below, it is at the top middle. 
+1. In the top left corner of the screen click on rg-hub-azlab in the breadcrumb trail. If you don't see the breadcrumb trail, search for the name of your resource group in the text box. You can see an example of the search box in the screenshot below, it is at the top middle. Once you find your resource group click into it.
 
     ![](images/image20.png)
 
@@ -89,11 +89,12 @@ For additional information regarding the various templates available and their r
 
      ![](images/image24.png)
     
-13. Ensure FortiGate Image SKU is set to Bring Your Own License or Fortiflex then ensure FortiGate Image Version is set to 7.4.8.
+13. Ensure FortiGate Image SKU is set to Bring Your Own License or Fortiflex then ensure FortiGate Image Version is set to 7.4.11.  FortiGate image versions in these drop downs may change over time. If 7.4.11 is not availabe chose the latest version of 7.4.x7.4
+14. 16. Ensure Availability Option is set to Availability Zones.
 
-14. Ensure Availability Option is set to Availability Zones.
+![](images/image27.png) 
 
-     ![](images/image27.png)
+     
 
     What are availability zones?
 

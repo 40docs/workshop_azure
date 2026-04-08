@@ -30,32 +30,12 @@ Your Quest Map
 
   ![](images/findyourrg.png)
 
-3. Notice a resource group has been created it should be called hub-studentXX-lab-rg where XX represents your pod number. The screenshots in this lab use pod 2 so your screen will look different. 
+3. Notice a resource group has been created it should be called hub-studentXX-lab-rg where XX represents your pod number. The screenshots in this lab use pod 2 so your screen will look different.
+4. Click into the resource group.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image3.png)
 
-5. Choose your appropriate subscription.
-
-    !!! note 
-         Your subscription may look different from the screenshots in this lab guide. 
-
-6. Enter `rg-hub-azlab` in the Resource Group name.
-
-7. Under region select Canada Central.
-
-    !!! note "Did you know?"
-        A region in Azure is defined as a collection of Azure data centers connected by a high-capacity, low-latency network, all within a specific geography, to provide local access to cloud services.
-
-    ![](images/image4.png)
-
-8. Click Review + create at the bottom of the screen.
-
-    ![A blue and white box with text AI-generated content may be incorrect.](images/image5.png)
-
-9. At the bottom of the screen click the blue Create button.
-
-10. A window will pop up in the right-hand corner, saying Resource group created. Click on the Go to resource group button. 
-     ![A screenshot of a computer AI-generated content may be incorrect.](images/image6.png)
+5. 
 
 11. Now that we have created a resource group, we can start adding resources to it. The first thing we are going to create is the virtual network.
 

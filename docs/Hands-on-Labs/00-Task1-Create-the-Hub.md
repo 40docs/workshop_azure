@@ -2,9 +2,9 @@
 
 Welcome! It's time to start your quest to the cloud! First up we must put on our boots and saddle up...Oh wait! This isn't that type of quest, instead you get to login to Azure! Exciting! 
 
-1. Open a browser and navigate to portal.azure.com
+1. Open a web browser and navigate to portal.azure.com
 2. Login using the username and password provided to you by your instructor.
-3. If a message pops up asking to tour Azure, please skip it. (or if you want a side quest, go for it!)
+3. If a message pops up asking to tour Azure, you can click Maybe later. (or if you want a side quest, go for it!)
 
 ## On this page
 - [Virtual Network Planning](#virtual-network-planning)
@@ -26,40 +26,38 @@ Your Quest Map
    ![](images/Youarehere1.jpg)
 
 
-1. In the Azure subscription you have decided to use, click on Resource Group under Azure services. 
+1. Near the bottom of the screen click on Resource groups. 
 
-    ![](images/image2.png)
-   
-    ![](images/image1a.png)
+  ![](images/findyourrg.png)
 
-3. Click Create.
+3. Notice a resource group has been created it should be called hub-studentXX-lab-rg where XX represents your pod number. The screenshots in this lab use pod 2 so your screen will look different. 
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image3.png)
 
-4. Choose your appropriate subscription.
+5. Choose your appropriate subscription.
 
     !!! note 
          Your subscription may look different from the screenshots in this lab guide. 
 
-5. Enter `rg-hub-azlab` in the Resource Group name.
+6. Enter `rg-hub-azlab` in the Resource Group name.
 
-6. Under region select Canada Central.
+7. Under region select Canada Central.
 
     !!! note "Did you know?"
         A region in Azure is defined as a collection of Azure data centers connected by a high-capacity, low-latency network, all within a specific geography, to provide local access to cloud services.
 
     ![](images/image4.png)
 
-7. Click Review + create at the bottom of the screen.
+8. Click Review + create at the bottom of the screen.
 
     ![A blue and white box with text AI-generated content may be incorrect.](images/image5.png)
 
-8. At the bottom of the screen click the blue Create button.
+9. At the bottom of the screen click the blue Create button.
 
-9. A window will pop up in the right-hand corner, saying Resource group created. Click on the Go to resource group button. 
+10. A window will pop up in the right-hand corner, saying Resource group created. Click on the Go to resource group button. 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image6.png)
 
-10. Now that we have created a resource group, we can start adding resources to it. The first thing we are going to create is the virtual network.
+11. Now that we have created a resource group, we can start adding resources to it. The first thing we are going to create is the virtual network.
 
     In this section, we'll create the network foundation for your connectivity hub, including the virtual network, Azure Bastion, and all required subnets.
 
@@ -75,27 +73,27 @@ Your Quest Map
     Your Quest Map
      ![](images/Youarehere2.jpg)
 
-11. Click Create.
+12. Click Create.
 
     ![](images/image7.png)
 
-12. You will be taken to the Marketplace.
+13. You will be taken to the Marketplace.
 
-13. In the search field type virtual network and hit enter.
+14. In the search field type virtual network and hit enter.
 
-14. Click on the Virtual Network box.
+15. Click on the Virtual Network box.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image9.png)
     
-15. Ensure you have the correct subscription and then click Create.
+16. Ensure you have the correct subscription and then click Create.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image9a.png)
 
-16. Type `vnet-hub-azlab` in the Virtual Network name textbox.
+17. Type `vnet-hub-azlab` in the Virtual Network name textbox.
 
-17. Ensure Region is set to Canada Central.
+18. Ensure Region is set to Canada Central.
 
-18. Click Next.
+19. Click Next.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image11.png)
     

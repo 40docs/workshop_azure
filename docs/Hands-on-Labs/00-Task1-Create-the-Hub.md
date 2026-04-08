@@ -1,5 +1,11 @@
 # Task 1: Create Your Connectivity Hub
 
+Welcome! It's time to start your own quest in the cloud! First up we must put on our boots and saddle up..Oh wait! This isn't that type of quest, instead you get to login to azure! Exciting! 
+
+1. Open a browser and navigate to portal.azure.com
+2. Login using the username and password provided to you by your instructor.
+3. If a message pops up asking to tour Azure, please skip it. 
+
 ## On this page
 - [Virtual Network Planning](#virtual-network-planning)
 - [Creating the Hub Network](#creating-the-hub-network)
@@ -7,6 +13,9 @@
 - [Subnet Architecture](#subnet-architecture)
 - [Subnet Configuration](#subnet-configuration)
 - [Network Validation](#network-validation)
+
+
+## Find Your Resource Group
 
 ![](images/image1.jpeg)
 
@@ -16,8 +25,6 @@ Your Quest Map
 
    ![](images/Youarehere1.jpg)
 
-
-## Steps to Create Resource Group
 
 1. In the Azure subscription you have decided to use, click on Resource Group under Azure services. 
 

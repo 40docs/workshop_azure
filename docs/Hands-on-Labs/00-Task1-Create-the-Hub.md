@@ -19,29 +19,25 @@ Welcome! It's time to start your quest to the cloud! First up we must put on our
 
 ![](images/image1.jpeg)
 
-Do you remember that old phrase “like finding a needle in a haystack”? It alludes to something that is hard to find. Azure has several resources available to you. A resource group is used to logically organize resources such as virtual machines, virtual networks, security appliances etc. Using resource groups makes it easier to organize and find your provisioned resources in Azure. A resource group has been created for you as part of the setup for this lab! 
+Do you remember that old phrase “like finding a needle in a haystack”? It alludes to something that is hard to find. Azure has several resources available to you. A resource group is used to logically organize resources such as virtual machines, virtual networks, security appliances etc. Using resource groups makes it easier to organize and find your provisioned resources in Azure. A resource group has been created for you as part of the initial setup for this lab! 
 
 Your Quest Map
 
    ![](images/Youarehere1.jpg)
 
 
-1. Near the bottom of the screen click on Resource groups. 
-
+1. Near the bottom of the screen click on Resource groups.
   ![](images/findyourrg.png)
-
-3. Notice a resource group has been created it should be called hub-studentXX-lab-rg where XX represents your pod number. The screenshots in this lab use pod 2 so your screen will look different.
-4. Click into the resource group.
+2.  Notice a resource group has been created it should be called hub-studentXX-lab-rg where XX represents your pod number. The screenshots in this lab use pod 2 so your screen will look different.
+3. Click into the resource group.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image3.png)
 
-5. 
-
-11. Now that we have created a resource group, we can start adding resources to it. The first thing we are going to create is the virtual network.
-
-    In this section, we'll create the network foundation for your connectivity hub, including the virtual network, Azure Bastion, and all required subnets.
+4. You might be thinking "this isn't very impressive" and you'd be right, we need to start filling our resource group with...resources. First up we will create our virtual network.
 
     ## Virtual Network Planning
+
+    In this section, we'll create the network foundation for your connectivity hub, including the virtual network, Azure Bastion, and all required subnets.
 
      How are we going to network this stuff?
 

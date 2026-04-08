@@ -28,7 +28,7 @@ Your Quest Map
 
 1. Near the bottom of the screen click on Resource groups.
   ![](images/findyourrg.png)
-2.  Notice a resource group has been created it should be called hub-studentXX-lab-rg where XX represents your pod number. The screenshots in this lab use pod 2 so your screen will look different.
+2.  Notice a resource group has been created it should be called hub-studentXX-lab-rg where XX represents your pod number. The screenshots in this lab use pod 2 so your screen will look different. If you're wondering, we call this the 'hub' as it can be seen as a connectivity or security hub for traffic in and out of Azure. 
 3. Click into the resource group.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image3.png)

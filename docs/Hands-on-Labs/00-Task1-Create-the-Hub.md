@@ -1,10 +1,10 @@
 # Task 1: Create Your Connectivity Hub
 
-Welcome! It's time to start your own quest in the cloud! First up we must put on our boots and saddle up..Oh wait! This isn't that type of quest, instead you get to login to azure! Exciting! 
+Welcome! It's time to start your quest to the cloud! First up we must put on our boots and saddle up...Oh wait! This isn't that type of quest, instead you get to login to Azure! Exciting! 
 
 1. Open a browser and navigate to portal.azure.com
 2. Login using the username and password provided to you by your instructor.
-3. If a message pops up asking to tour Azure, please skip it. 
+3. If a message pops up asking to tour Azure, please skip it. (or if you want a side quest, go for it!)
 
 ## On this page
 - [Virtual Network Planning](#virtual-network-planning)
@@ -19,7 +19,7 @@ Welcome! It's time to start your own quest in the cloud! First up we must put on
 
 ![](images/image1.jpeg)
 
-Do you remember that old phrase “like finding a needle in a haystack”? It alludes to something that is hard to find. Azure has several resources available to you. A resource group is used to logically organize resources such as virtual machines, virtual networks, security appliances etc. Using a resource group makes it easier to organize and find your provisioned resources in Azure. A resource group has been created for you as part of the setup for this lab! 
+Do you remember that old phrase “like finding a needle in a haystack”? It alludes to something that is hard to find. Azure has several resources available to you. A resource group is used to logically organize resources such as virtual machines, virtual networks, security appliances etc. Using resource groups makes it easier to organize and find your provisioned resources in Azure. A resource group has been created for you as part of the setup for this lab! 
 
 Your Quest Map
 

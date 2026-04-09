@@ -115,20 +115,19 @@ Your Quest Map
 
     Wouldn’t it be nice if we all had a spare home? If something were to happen to one of them, we just move over to the other one! This analogy loosely explains availability zones as they help create redundancy and high availability. Take a look at the Azure Region Map below: 
 
-    ![](images/Azuremap.png)
-
+![](images/Azuremap.png) 
+   
     Do you see that Azure has data centers all over the world? Neat eh!? Azure groups data centers into regions. For example, Canada has two Regions: Canada Central and Canta East. Many Azure regions provide availability zones. According to learn.microsoft.com Availability Zones are separated groups of datacenters within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones.
 
-    ![](images/Regions.png)
+![](images/Regions.png)
 
     To apply these concepts to our environment, look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other and have our passive FortiGate take over. 
 
-    ![active/passive design](images/HAzones.jpg)
+![](images/HAzones.png)
 
     Are availability zones the only form of High availability? No, there is also something called an Avaiability Set. An availability set is deploying HA within a single date center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
-    
-    ![](images/Availabilityset.png)
-    
+
+![](images/HAvailabilityset.png)
 
  Microsoft offers different SLAs on Azure based on the deployment that you use:
 - Availability zone (AZ) (different datacenter in the same region): 99.99%

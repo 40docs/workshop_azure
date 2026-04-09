@@ -67,7 +67,7 @@ Your Quest Map
 
 17. Type `vnet-hub-azlab` in the Virtual Network name textbox.
 
-18. Ensure Region is set to Canada Central.
+18. Ensure Region is set to US East. (We are using the US due to the Azure subscription we are using for this lab environment)
 
 19. Click Next.
 
@@ -95,7 +95,7 @@ Your Quest Map
 
 25. Click the Next button on the bottom of the screen.
 
-26. Change the IP address to 10.2.0.0 /16 as shown below. You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
+26. Change the IP address to 10.2.0.0 /16 as shown below. If you see an error about malformed IP address, make sure there is not space after the IP address. You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image15.png)
 

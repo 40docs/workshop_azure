@@ -175,16 +175,8 @@ Are availability zones the only form of High availability? No, there is also som
     
      ![](images/image30.png)
 
+
     ## Load Balancer Setup
-
-    ??? info "Why Public IPs for FortiGate Management Instead of Bastion?"
-        Great question! In Task 1 we deployed Azure Bastion and talked about how it lets you access VMs without assigning them public IPs — so why are we giving each FortiGate its own management public IP?
-
-        **Bastion is designed for RDP/SSH access to standard VMs.** It works by proxying a remote desktop or terminal session through the Azure portal. FortiGate management, on the other hand, is accessed through its own HTTPS web GUI and CLI (SSH), which have unique session handling, certificate management, and API endpoints that don't play nicely with the Bastion proxy. You need a direct HTTPS connection to the FortiGate's management interface for reliable day-to-day administration.
-
-        **In a production environment** you would typically lock down these management PIPs with Network Security Groups (NSGs) that restrict access to a set of known administrator source IPs, or you might use a VPN/ExpressRoute for private management access and skip the public IPs entirely. For our lab, assigning public IPs to the management interfaces is the simplest way to get you hands-on with the FortiGate GUI quickly.
-
-        **The Bastion we deployed is still valuable!** We'll use it later to access our test VMs in the spoke networks — that's exactly the use case it was built for.
 
 31. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces. (
 
@@ -210,6 +202,15 @@ Are availability zones the only form of High availability? No, there is also som
     **FortiGate B** 
 
     ![](images/image33.png)
+
+    ??? info "Why Public IPs for FortiGate Management Instead of Bastion?"
+        Great question! In Task 1 we deployed Azure Bastion and talked about how it lets you access VMs without assigning them public IPs — so why are we giving each FortiGate its own management public IP?
+
+        **Bastion is designed for RDP/SSH access to standard VMs.** It works by proxying a remote desktop or terminal session through the Azure portal. FortiGate management, on the other hand, is accessed through its own HTTPS web GUI and CLI (SSH), which have unique session handling, certificate management, and API endpoints that don't play nicely with the Bastion proxy. You need a direct HTTPS connection to the FortiGate's management interface for reliable day-to-day administration.
+
+        **In a production environment** you would typically lock down these management PIPs with Network Security Groups (NSGs) that restrict access to a set of known administrator source IPs, or you might use a VPN/ExpressRoute for private management access and skip the public IPs entirely. For our lab, assigning public IPs to the management interfaces is the simplest way to get you hands-on with the FortiGate GUI quickly.
+
+        **The Bastion we deployed is still valuable!** We'll use it later to access our test VMs in the spoke networks — that's exactly the use case it was built for.
 
 35. When you are finished, ensure your configuration looks like the screenshot below.
 

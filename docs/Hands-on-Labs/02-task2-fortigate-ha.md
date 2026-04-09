@@ -66,20 +66,20 @@ Your Quest Map
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image22.png)
 
-4. Click on the dropdown for Create for Fortinet FortiGate Next-Generation Firewall (not the option that ends with VM)
+4. Click on the dropdown for Create for Fortinet FortiGate Next-Generation Firewall (not the PAYG option).
 
 5. Click on Active-Passive HA with ELB/ILB in the drop-down menu.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image23.png)
 
     !!! note annotate "Note"
-        ELB and ILB stands for external load balancer and ILB stands for internal load balancer. 
+        ELB stands for external load balancer and ILB stands for internal load balancer. 
 
     ## Configuration Parameters
 
-6. Select rg-hub-azlab in the Resource group drop down.
+6. Select 'hub-studentXX-lab-rg' in the Resource group drop down.
 
-7. Set region to Central Canada.
+7. Set region to US East.
 
 8. Set the FortiGate administrative username to `fortinetuser`
 
@@ -93,14 +93,23 @@ Your Quest Map
 
      ![](images/image24.png)
     
-13. Ensure FortiGate Image SKU is set to Bring Your Own License or Fortiflex then ensure FortiGate Image Version is set to 7.4.11.  FortiGate image versions in these drop downs may change over time. If 7.4.11 is not availabe chose the latest version of 7.4.x7.4
-14. 16. Ensure Availability Option is set to Availability Zones.
+13. Ensure FortiGate Image is set to 7.4.11. FortiGate image versions in these drop downs may change over time. If 7.4.11 is not availabe choose the latest version of 7.4.x.
+    
+  ![](images/image27.png) 
+  
+14. Click on the Change Size link in the Size section. Since we are running in a lab environment we do not need a 8vCPU VM. We are going to use an 4 vCPU size instead.
+  
+15. Look for the Previous Generations drop down and expand it.
+    
+17. Click on F4.
+    
+19. Click on Select.
+    
+  ![](images/image27a.png) 
 
-![](images/image27.png) 
+18. Ensure Availability Option is set to Availability Zones.
 
-     
-
-    What are availability zones?
+  ### What are availability zones?
 
     ![A castle on a cloud with trees and fire AI-generated content may be incorrect.](images/image25.png)
 
@@ -112,11 +121,12 @@ Your Quest Map
 
     ![](images/Regions.png)
 
-    To apply these concepts to our enviroment, look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other and have our passive FortiGate take over. 
+    To apply these concepts to our environment, look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other and have our passive FortiGate take over. 
 
     ![active/passive design](images/HAzones.jpg)
 
     Are availability zones the only form of High availability? No, there is also something called an Avaiability Set. An availability set is deploying HA within a single date center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
+    
     ![](images/Availabilityset.png)
     
 
@@ -168,11 +178,11 @@ Your Quest Map
 
     ## Load Balancer Setup
 
-31. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces.
+31. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces. (
 
     Your Quest Map
     
-    ![](images/youarehere5.jpg)
+    ![](images/Youarehere5.jpg)
 
 32. Click create new under the External Load Balancer and edit the name to match the screenshot below.
 

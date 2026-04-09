@@ -11,7 +11,7 @@ In this section, we'll deploy spoke networks and test virtual machines to valida
 
 ## Architecture Overview
 
-There are two common methods for deploying applications:
+There are two common methods for deploying applications: Hub and Spoke and using a "Protected Subnet:. Remember the subnet "ProtectedA" we created? That is an example of a protected subnet where we can deploy virtual machines. For example, we could put FortiManager and FortiAnalyzer here. Now you are going to build a hub and spoke (if your mind just thought of SD-WAN, shoo that idea away, as that is not they type of hub and spoke we are talking about in this context). We are going to build VNet spokes and build the routing needed to direct that traffic through the connectivity hub.  
 
 <div class="grid cards" markdown>
 
@@ -55,7 +55,7 @@ We are now going to create our spokes to deploy our "applications" into. We are 
 
 The purpose of this lab is to simulate basic connectivity, so we are not going to deploy a real functioning application. Let's pretend we have an app that requires a public facing front end, and a back end that only the "webserver" front end will talk to.
 
-1. Navigate to your rg-hub-azlab resource group. You can search for it by name in the search bar at top of the screen if needed.
+1. Navigate to your hub-studentXX-lab-rg resource group. You can search for it by name in the search bar at top of the screen if needed.
 
 2. Click on Create.
 

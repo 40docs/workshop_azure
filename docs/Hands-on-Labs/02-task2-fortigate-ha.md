@@ -113,19 +113,19 @@ Your Quest Map
 
 ![](images/image25.png) 
 
-    Wouldn’t it be nice if we all had a spare home? If something were to happen to one of them, we just move over to the other one! This analogy loosely explains availability zones as they help create redundancy and high availability. Take a look at the Azure Region Map below: 
+Wouldn’t it be nice if we all had a spare home? If something were to happen to one of them, we just move over to the other one! This analogy loosely explains availability zones as they help create redundancy and high availability. Take a look at the Azure Region Map below: 
 
 ![](images/Azuremap.png) 
    
-    Do you see that Azure has data centers all over the world? Neat eh!? Azure groups data centers into regions. For example, Canada has two Regions: Canada Central and Canta East. Many Azure regions provide availability zones. According to learn.microsoft.com Availability Zones are separated groups of datacenters within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones.
+Do you see that Azure has data centers all over the world? Neat eh!? Azure groups data centers into regions. For example, Canada has two Regions: Canada Central and Canada East. Many Azure regions provide availability zones. According to learn.microsoft.com Availability Zones are separated groups of datacenters within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones.
 
 ![](images/Regions.png)
 
-    To apply these concepts to our environment, look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other and have our passive FortiGate take over. 
+To apply these concepts to our environment, look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other and have our passive FortiGate take over. 
 
 ![](images/HAzones.png)
 
-    Are availability zones the only form of High availability? No, there is also something called an Avaiability Set. An availability set is deploying HA within a single date center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
+Are availability zones the only form of High availability? No, there is also something called an Avaiability Set. An availability set is deploying HA within a single date center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
 
 ![](images/HAvailabilityset.png)
 
@@ -162,7 +162,7 @@ Your Quest Map
 
 27. Click on the HA Management subnet dropdown and select Management.
 
-28. Notice we are also creating a new subnet called Protected A subnet; leave it a the default setting.
+28. Notice we are also creating a new subnet called Protected A subnet. Leave this dropdown as it is with the pre-selected Protected A subnet. 
 
 29. If needed, scroll down the Accelerated networking and select disabled.
 
@@ -225,17 +225,17 @@ Your Quest Map
 ## FortiGate HA Function Verification 
 Let's login to each FortiGate to ensure it is functional. 
 
-1.	Navigate to your rg-azlab-hub. Use the search bar at the top of the screen to search for it if needed.
+1.	Navigate to your hub-studentXX-lab-rg. Use the search bar at the top of the screen to search for it if needed.
 2.	In the list of resources click on azlab-FGT-nic4, this is the management interface.
 3.	Make a note of the IP address on the right-hand column. 
 4.	Open another browser tab and enter https://Your FortiGateA IP address, 
 5.	Login with username fortinetuser.
 6.	Password is PizzaDay12345!
-7.	Skip the startup wizard. 
+7.	Skip the startup wizard.
 8.	If you are taken to the dashboard, congratulations you FortiGate-A is functional.
-9.	Now let’s check on FortiGate B, navigate back to the rg-hub-azlab.
+9.	Now let’s check on FortiGate B, navigate back to the hub-studentXX-lab-rg.
 10.	If necessary, click on page 2 at the bottom of the screen, and find azlab-FGT-B-nic4 and click on it.
-11.	Note the IP address and copy it.
+11.	Note the Public IP address and copy it.
 12.	In a new browser, open a tab to https://yourFortigateIPB Address
 13.	Login with Username fortinetuser
 14.	Password is PizzaDay12345!
@@ -245,7 +245,7 @@ Let's login to each FortiGate to ensure it is functional.
 
 ## Fixing licensing issue on the FortiGate
 
-**Please only complete this section if you had a licensing issue on the FortiGate.**
+**Please only complete this section if you had a licensing issue on the FortiGates.**
 
 1.	Navigate back to your open Azure tab and find your rg-hub-azlab resource group.
 2.	In the resource section find azlab-FTG-A and click on it. 

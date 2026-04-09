@@ -103,15 +103,15 @@ Your Quest Map
     
 17. Click on F4.
     
-19. Click on Select.
+18. Click on Select.
     
   ![](images/image27a.png) 
 
 18. Ensure Availability Option is set to Availability Zones.
 
-  ### What are availability zones?
+## What are availability zones?
 
-    ![A castle on a cloud with trees and fire AI-generated content may be incorrect.](images/image25.png)
+![](images/image25.png) 
 
     Wouldn’t it be nice if we all had a spare home? If something were to happen to one of them, we just move over to the other one! This analogy loosely explains availability zones as they help create redundancy and high availability. Take a look at the Azure Region Map below: 
 

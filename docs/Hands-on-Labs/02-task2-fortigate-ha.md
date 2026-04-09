@@ -164,7 +164,7 @@ Are availability zones the only form of High availability? No, there is also som
 
 28. Notice we are also creating a new subnet called Protected A subnet. Leave this dropdown as it is with the pre-selected Protected A subnet. 
 
-29. If needed, scroll down the Accelerated networking and select disabled.
+29. If needed, scroll down to Accelerated networking and select disabled.
 
     !!! Note "Azure Accelerated Networking"
         Azure Accelerated Networking uses hardware-based virtualization to directly link a VM's network interface (NIC) to its network, bypassing the host's virtual switch and improving performance. We don’t need this in our lab. In a production enviroment you can turn on accellerated network to tell Azure to deploy the SR-IOV NIC driver rather than the standard driver, giving better performance.

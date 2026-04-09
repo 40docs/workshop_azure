@@ -177,7 +177,7 @@ Are availability zones the only form of High availability? No, there is also som
 
     ## Load Balancer Setup
 
-    !!! info "Why Public IPs for FortiGate Management Instead of Bastion?"
+    ??? info "Why Public IPs for FortiGate Management Instead of Bastion?"
         Great question! In Task 1 we deployed Azure Bastion and talked about how it lets you access VMs without assigning them public IPs — so why are we giving each FortiGate its own management public IP?
 
         **Bastion is designed for RDP/SSH access to standard VMs.** It works by proxying a remote desktop or terminal session through the Azure portal. FortiGate management, on the other hand, is accessed through its own HTTPS web GUI and CLI (SSH), which have unique session handling, certificate management, and API endpoints that don't play nicely with the Bastion proxy. You need a direct HTTPS connection to the FortiGate's management interface for reliable day-to-day administration.

@@ -18,7 +18,7 @@ Active-passive HA with SDN connector failover: This design deploys two FortiGate
 
 ![](images/APSND.jpg)
 
-### Active-active with external and internal Azure LB
+### Active-active with external and internal Azure Load Balancer (LB)
 
 This design deploys two FortiGate-VMs in active-active as two independent systems. In this setup, the Azure LB handles traffic failover using a health probe towards the FortiGate-VMs. You configure the public IP addresses on the Azure LB. The public IP addresses provide ingress and egress flows with inspection from the FortiGate. You can use a FortiManager or local replication to synchronize configuration in this setup.
 
@@ -50,7 +50,11 @@ For additional information regarding the various templates available and their r
 
 ## Template Deployment
 
-1. In the top left corner of the screen click on rg-hub-azlab in the breadcrumb trail. If you don't see the breadcrumb trail, search for the name of your resource group in the text box. You can see an example of the search box in the screenshot below, it is at the top middle. Once you find your resource group click into it.
+Your Quest Map
+
+ ![](images/YouarehereFW.jpg)  
+
+1. In the top search box enter the name of your resource group and click into it. You resource group was named hub-studentXX-lab-rg where XX is your pod number.
 
     ![](images/image20.png)
 

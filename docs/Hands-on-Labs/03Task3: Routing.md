@@ -67,25 +67,20 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 4. Click on Create under the virtual network option.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images/image39.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images/image9.png)
 
 5. Click on Virtual Network from the dropdown.
 
-6. Ensure the resource group is rg-hub-azlab.
+6. Ensure the resource group is hub-studentXX-lab-rg.
 
 7. Set the name as `vnet-app-frontend`.
 
-8. Ensure the Region is set to Canada Central.
+8. Ensure the Region is set to US East.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image40.png)
 
-9. At the bottom of the screen click Next Security. (Your button may just say Next)
-
-    ![](images/nextsecurity.png)
-
-10. We are not going to create a bastion this time so click Next: IP addresses.
-
-     ![](images/image41.png)
+9. At the bottom of the screen click Next
+10. We are not going to create a bastion this time so click Next.
 
 11. Change the subnet to 192.168.1.0 and select /24 from the dropdown menu.
 

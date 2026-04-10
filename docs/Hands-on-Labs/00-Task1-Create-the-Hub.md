@@ -49,27 +49,27 @@ Your Quest Map
     Your Quest Map
      ![](images/Youarehere2.jpg)
 
-12. Click Create.
+5. Click Create.
 
     ![](images/image7.png)
 
-13. You will be taken to the Marketplace.
+6. You will be taken to the Marketplace.
 
-14. In the search field type virtual network and hit enter.
+7. In the search field type virtual network and hit enter.
 
-15. Click on the Virtual Network box.
+8. Click on the Virtual Network box.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image9.png)
     
-16. Ensure you have the correct subscription and then click Create.
+9. Ensure you have the correct subscription and then click Create.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image9a.png)
 
-17. Type `vnet-hub-azlab` in the Virtual Network name textbox.
+10. Type `vnet-hub-azlab` in the Virtual Network name textbox.
 
-18. Ensure Region is set to US East. (We are using the US due to the Azure subscription we are using for this lab environment)
+11. Ensure Region is set to US East. (We are using the US due to the Azure subscription we are using for this lab environment)
 
-19. Click Next.
+12. Click Next.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image11.png)
     
@@ -81,33 +81,33 @@ Your Quest Map
 
      ![](images/Youarehere3.jpg)
 
-20. Click Enable Bastion checkbox.
+13. Click Enable Bastion checkbox.
 
-21. Rename it to `bastion-hub-azlab`.
+14. Rename it to `bastion-hub-azlab`.
 
-22. Click on the blue Create a public IP address.
+15. Click on the blue Create a public IP address.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image13.png)
     
-23. Change the Name to `pip-bas-hub-azlab` then click OK. 
+16. Change the Name to `pip-bas-hub-azlab` then click OK. 
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image14a.png)
 
-25. Click the Next button on the bottom of the screen.
+17. Click the Next button on the bottom of the screen.
 
-26. Change the IP address to 10.2.0.0 /16 as shown below. If you see an error about malformed IP address, make sure there is no space after the IP address. You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
+18. Change the IP address to 10.2.0.0 /16 as shown below. If you see an error about malformed IP address, make sure there is no space after the IP address. You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image15.png)
 
-27. Click Review + Create.
+19. Click Review + Create.
     
     ![](images/image15a.png)
 
-28. Double-check the information presented matches what we’ve intended to configure so far and then click the blue create button.
+20. Double-check the information presented matches what we’ve intended to configure so far and then click the blue create button.
 
-29. After 10-15 minutes your screen will look similar to the screenshot below. (This might be a good time to grab a coffee or tea!)
+21. After 10-15 minutes your screen will look similar to the screenshot below. (This might be a good time to grab a coffee or tea!)
 
-30. Click Go to resource.
+22. Click Go to resource.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image16.png)
 

@@ -241,39 +241,40 @@ Do you remember that old phrase "too many cooks in the kitchen"? We can loosely 
 4.	In the Route table box, click on create then select Route table.
     ![](images/AzureUDR2.png)
 5.  Ensure the Resource group is set to hub-studentXX-lab-rg.
-6.	Set the Region to US East.
-7.	Set the Name to udr-frontend-spoke
-8.	Click Review + Create.
-9.	Click Create.
+6.  Set propagate gateway routes to No.
+7.	Set the Region to US East.
+8.	Set the Name to udr-frontend-spoke
+9.	Click Review + Create.
+10.	Click Create.
     ![](images/AzureUDR3.png)
-10. Wait until the deployment is complete and looks similar to the screenshot below. 
+11. Wait until the deployment is complete and looks similar to the screenshot below. 
     ![](images/AzureUDR4.png)
-11. Now that we have created a routing table, we need to get the IP address of the Internal load balancer located in the hub. We are going to use it as our destination for all outbound traffic.
-12. Open a new browser tab and login to Azure and go to the hub-studentXX-lab-rg resource group.
-13. In the Resources area find the azlab-internalloadbalancer. You may have to click on page 2 using the numbers at the bottom of the page. 
-14. The IP address we need is called the Frontend IP address. Don't worry if your IP address is different than the one in the screenshot. 
+12. Now that we have created a routing table, we need to get the IP address of the Internal load balancer located in the hub. We are going to use it as our destination for all outbound traffic.
+13. Open a new browser tab and login to Azure and go to the hub-studentXX-lab-rg resource group.
+14. In the Resources area find the azlab-internalloadbalancer. You may have to click on page 2 using the numbers at the bottom of the page. 
+15. The IP address we need is called the Frontend IP address. Don't worry if your IP address is different than the one in the screenshot. 
     ![](images/AzureUDR6.png)
-15. Hover your mouse over the IP address and click copy to clipboard. (Note your IP address will not be the same as the screenshot below)
+16. Hover your mouse over the IP address and click copy to clipboard. (Note your IP address will not be the same as the screenshot below)
     ![](images/AzureUDR7.png)
-16.	Go back to the browser tab with the open route table you just created. Click on Go to resource.
-17.	Click on Settings on the left-hand side and then click on Subnets.
+17.	Go back to the browser tab with the open route table you just created. Click on Go to resource.
+18.	Click on Settings on the right-hand side and then click on Subnets.
     ![](images/AzureUDR9.png)
 
-18. Click on Associate.
+19. Click on Associate.
     ![](images/AzureUDR10.png)
-19. In the menu that pops out of the left-hand side of the screen, search for your vnet-app-frontend and ensure the subnet says default.
+20. In the menu that pops out of the left-hand side of the screen, search for your vnet-app-frontend and ensure the subnet says default.
     ![](images/AzureUDR11.png)
-20.	Click Ok at the bottom of the pop out menu.
-21.	Now we are going to add a route. 
-22.	On the left-hand side menu click on Route.
-23.	Then click on add.
+21.	Click Ok at the bottom of the pop out menu.
+22.	Now we are going to add a route. 
+23.	On the left-hand side menu click on Route.
+24.	Then click on add.
   ![](images/AzureUDR12.png)
-24.	Set route name as to_hub.
-25.	Set Destination type to IP Addresses
-26.	Set Destination IP addresses to 0.0.0.0/0.
-27.	Set next hop type to Virtual appliance
-28.	Paste the IP address of your internal load balancer. (do not copy the address in the screenshot below)
-29.	Click Add.
+25.	Set route name as to_hub.
+26.	Set Destination type to IP Addresses
+27.	Set Destination IP addresses to 0.0.0.0/0.
+28.	Set next hop type to Virtual appliance
+29.	Paste the IP address of your internal load balancer. (do not copy the address in the screenshot below)
+30.	Click Add.
     ![](images/AzureUDR13.png)
    	
 

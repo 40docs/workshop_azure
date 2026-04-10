@@ -231,9 +231,8 @@ Your Quest Map
     ![](images/AzureVNetpeering6.png)
     ![](images/AzureVNetpeering7.png)
 ## UDR Creation
-Ok we’ve built our ‘roads’ but we need to build the UDR (signpost), so Azure knows how to forward traffic. Let’s build our first UDR.
 
-Routing in Azure differs from traditional datacenter environments because it’s based on **system-managed routing tables** rather than fully manual configurations. In an on-premises setup, firewalls and routers typically control all subnet-to-subnet routing directly, and VPNs often require explicit routes (static or dynamically advertised). In Azure, however, each virtual network (VNet) automatically creates routes between its subnets, meaning traffic **could** bypass a firewall unless you specifically configure User-Defined Routes (**UDR**s) to force it through. Similarly, when using VPN gateways, Azure handles the propagation of routes into the VNet, but you’ll often need to fine-tune UDRs to ensure traffic flows through security appliances like FortiGate rather than taking the default system path. This shift from hardware-centric to platform-managed routing is a key difference to keep in mind when designing secure architectures.
+Do you remember that old phrase "too many cooks in the kitchen"? We can loosely think of that when we think of routing in Azure. In the on-premises data center, we may have one cook, a firewall or a router to take care of subnet-to-subnet traffic. In Azure, we have two to take into consideration. Azure uses **system-managed-routing tables** which in our analogy represents the second cook. Each VNet automatically creates routes between its subnets, meaning traffic **could** bypass a firewall unless you configure a UDR to force traffic through the firewall. Azure handles the propagation of routes into the VNet, but you’ll often need to fine-tune UDRs to ensure traffic flows through security appliances like FortiGate rather than taking the default system path. This shift from hardware-centric to platform-managed routing is a key difference to keep in mind when designing secure architectures.
 
 1.	Navigate back to the hub-studentXX-lab-rg. 
 2.	Click Create.

@@ -29,7 +29,7 @@ This hands-on lab is organized into the following sections:
 1. **[Create a Connectivity Hub](00-Task1-Create-the-Hub.md)** - Set up the foundational container for all resources
 2. **[FortiGate Deployment](02-task2-fortigate-ha.md)** - Deploy high-availability FortiGate firewalls with load balancers
 3. **[Testing & Validation](03Task3: Routing.md)** - Test spoke networks, virtual machines, and connectivity flows
-4. **[Configuration & Ops](05-advanced-operations.md)** - Advanced configuration, troubleshooting, and operational procedures
+4. **[Create Firewall Rules](04-Task 4:-Create-firewall-rules.md)** - Configure firewall policies and routes for north-south and east-west traffic
 
 ## Expected Outcomes
 
@@ -43,16 +43,14 @@ Upon completion of this lab, you will have:
 
 ## Time Estimate
 
-- **Total Lab Time**: 3-4 hours
+- **Total Lab Time**: 3 hours
 - **Prerequisites Setup**: 15 minutes
 - **Core Infrastructure**: 2-2.5 hours
 - **Testing & Validation**: 45-60 minutes
-- **Advanced Configuration**: 30-45 minutes
 
 !!! tip "Lab Tips"
     - Take your time with each section and validate configurations before proceeding
     - Screenshots are provided throughout to help verify your progress
-    - If you encounter issues, refer to the troubleshooting section in Advanced Operations
 
 
 ## Considerations

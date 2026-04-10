@@ -129,26 +129,20 @@ Testing East-West Traffic
 5.  Repeat this process on the Frontend machine, but ping 192.168.2.5, which is the IP of the backend app.
 6.	The ping is successful! 
 7.	Hit Ctrl C to stop the ping.
-8.	Please move to the Clean up task to begin shutting down the VM’s if you don’t shut them down, they will incur charges to your Azure Subscription!
+8.	Please move to the Clean up task to tear down your lab resources — if you leave them running, they will continue to incur charges on your Azure subscription!
 
 ## Clean up!
 
+The simplest way to stop all charges is to delete the entire resource group, which removes every resource inside it in one action.
+
 1.	In the Azure portal, navigate to your hub-studentXX-lab-rg resource group.
-2.	In the resource section click on the Type column to sort it.
-    ![](images/Cleanup1.png)
-3.  Notice all our virtual machines are now in one section!
-4.	Right click on each Virtual machine and open it in a new tab. 
-    ![](images/Cleanup2.png)
-5.  In each tab you just opened click on the Stop button as shown in the screenshot above.
-6.	Click Yes to the pop-up asking you to confirm. 
-7.	Please ensure all tabs show the device as stopped.
-8.	You can tell it’s stopped when the Stop button is greyed out and the Start button is available.
-    ![](images/Cleanup3.png)
-9. If you will not use this lab again it is best to delete all resources, you can do this by going to the resource group opening resources and selecting Delete!. This way you are not charged for the Azure resources you created. 
+2.	At the top of the resource group blade, click **Delete resource group**.
+3.	Type the resource group name to confirm, then click **Delete**.
+4.	Azure will now remove all virtual machines, networks, load balancers, and FortiGates that were created during this lab. This may take several minutes.
+
+!!! warning
+    Deleting the resource group is irreversible. Make sure you have saved anything you want to keep before proceeding.
 
 ## You have Completed your Quest!!!
  ![](images/Congrats.png)
 
-
----
-**Next Step:** [Appendix: Advanced Operations](05-advanced-operations.md) 

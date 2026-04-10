@@ -273,7 +273,9 @@ Do you remember that old phrase "too many cooks in the kitchen"? We can loosely 
 26.	Set Destination IP addresses to 0.0.0.0/0.
 27.	Set next hop type to Virtual appliance
 28.	Paste the IP address of your internal load balancer. (do not copy the address in the screenshot below)
+29.	Click Add.
     ![](images/AzureUDR13.png)
+   	
 
 Challenge Time: Now that you have created the Route table and UDR for connectivity to the frontend spoke, challenge yourself to repeat the process for the backend spoke. There are settings below if you need a reference. 
 

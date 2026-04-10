@@ -56,21 +56,15 @@ Now that we know our interface mappings, let’s create our policy.
     ![](images/FirewallPolicy8.png)
    We are now going to create two static routes. One to the frontend VNet and the other to the backend VNet.
 
-10. We need to use the IP address of the internal load balancer as our next hop.
-11. Go back to your tab with the Azure Portal.
-12. Navigate to hub-studentXX-lab-rg.
-13. Click on azlab-internalloadbalancer.
-14. Find the private IP address of the load balancer, note it will be different than the one in the screenshot below. 
+10. Return to your FortiGate A browser tab. 
+11. On the left-hand menu, click on Network then Static Routes.
     ![](images/FirewallPolicy9.png)
-15. Return to your FortiGate A browser tab. 
-16. On the left-hand menu, click on Network then Static Routes.
-17. Click Create new.
-    ![](images/FirewallPolicy10.png)
-18. Ensure your configuration looks like the screenshot below.
-    ![](images/FirewallPolicy11.png)
-19. Click OK 
-20. Repeat this process to create a static route for the backend.
-    ![](images/FirewallPolicy12.png)
+12. Click Create new.
+13. Ensure your configuration looks like the screenshot below.
+    ![](images/to_frontend_fixed.png)
+14. Click OK 
+15. Repeat this process to create a static route for the backend.
+    ![](images/to_backend_fixed.png)
 
 ## Testing North-South Traffic
 Now for some fun, let’s test our north-south traffic.

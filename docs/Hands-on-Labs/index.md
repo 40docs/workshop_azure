@@ -27,9 +27,9 @@ Before starting this lab, ensure you have:
 This hands-on lab is organized into the following sections:
 
 1. **[Create a Connectivity Hub](00-Task1-Create-the-Hub.md)** - Set up the foundational container for all resources
-3. **[FortiGate Deployment](02-task2-fortigate-ha.md)** - Deploy high-availability FortiGate firewalls with load balancers
-4. **[Testing & Validation](03Task3: Routing.md)** - Test spoke networks, virtual machines, and connectivity flows
-5. **[Configuration & Ops](05-advanced-operations.md)** - Advanced configuration, troubleshooting, and operational procedures
+2. **[FortiGate Deployment](02-task2-fortigate-ha.md)** - Deploy high-availability FortiGate firewalls with load balancers
+3. **[Testing & Validation](03Task3: Routing.md)** - Test spoke networks, virtual machines, and connectivity flows
+4. **[Configuration & Ops](05-advanced-operations.md)** - Advanced configuration, troubleshooting, and operational procedures
 
 ## Expected Outcomes
 

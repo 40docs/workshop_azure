@@ -1,5 +1,5 @@
 # Task 2: FortiGate Deployment
-One way of deploying FortiGates in Azure is to use the predefined templates in Market Place. A template decides how many FortiGates to deploy, how to design networking, and how to conduct High Avaiability. Let's look at the four templates available for deployment.
+One way of deploying FortiGates in Azure is to use the predefined templates in Market Place. A template decides how many FortiGates to deploy, how to design networking, and how to conduct High Availability. Let's look at the four templates available for deployment.
 
 The four available templates are:
 - Single FortiGate VM
@@ -32,7 +32,7 @@ This design deploys two FortiGate-VMs in active-passive mode connected using uni
 
 ## Introduction 
 
-In this section, we'll deploy FortiGate firewalls in a high-availability configuration with load balancers to provide robust security for your connectivity hub. You may have heard of the name "load balancer sandwich" - we are deploying the firewalls between two LB instances to ensure symmetric flows of traffic between services behind and infront of the firewalls.
+In this section, we'll deploy FortiGate firewalls in a high-availability configuration with load balancers to provide robust security for your connectivity hub. You may have heard of the name "load balancer sandwich" - we are deploying the firewalls between two LB instances to ensure symmetric flows of traffic between services behind and in front of the firewalls.
 
 ## On this page
 - [High Availability Overview](#high-availability-overview)
@@ -46,7 +46,7 @@ In this section, we'll deploy FortiGate firewalls in a high-availability configu
 
 We are now ready to deploy the HA FortiGate-VMs from Azure Marketplace. We are going to deploy two FortiGate-VMs running in Active-Passive mode. We will also deploy two load balancers to load balance traffic from both internal and external sources! Does that sound like too much? Don't worry, Azure MarketPlace has a preconfigured template to take care of all that! Ready? Let’s go!
 
-For additional information regarding the various templates available and their respective SLAs for failover please see [FortiGate Azure Addministration Guide.](https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-administration-guide/983245)
+For additional information regarding the various templates available and their respective SLAs for failover please see [FortiGate Azure Administration Guide.](https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-administration-guide/983245)
 
 ## Template Deployment
 
@@ -54,7 +54,7 @@ Your Quest Map
 
  ![](images/YouarehereFW.jpg)  
 
-1. In the top search box enter the name of your resource group and click into it. You resource group was named hub-studentXX-lab-rg where XX is your pod number.
+1. In the top search box enter the name of your resource group and click into it. Your resource group was named hub-studentXX-lab-rg where XX is your pod number.
 
     ![](images/image20.png)
 
@@ -93,11 +93,11 @@ Your Quest Map
 
      ![](images/image24.png)
     
-13. Ensure FortiGate Image is set to 7.4.11. FortiGate image versions in these drop downs may change over time. If 7.4.11 is not availabe choose the latest version of 7.4.x.
+13. Ensure FortiGate Image is set to 7.4.11. FortiGate image versions in these drop downs may change over time. If 7.4.11 is not available choose the latest version of 7.4.x.
     
   ![](images/image27.png) 
   
-14. Click on the Change Size link in the Size section. Since we are running in a lab environment we do not need a 8vCPU VM. We are going to use an 4 vCPU size instead.
+14. Click on the Change Size link in the Size section. Since we are running in a lab environment we do not need an 8vCPU VM. We are going to use a 4 vCPU size instead.
   
 15. Look for the Previous Generations drop down and expand it.
     
@@ -125,7 +125,7 @@ To apply these concepts to our environment, look at the diagram below, see how t
 
 ![](images/YouarehereAvail.png)
 
-Are availability zones the only form of High availability? No, there is also something called an Avaiability Set. An availability set is deploying HA within a single date center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
+Are availability zones the only form of High availability? No, there is also something called an Availability Set. An availability set is deploying HA within a single data center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
 
 ![](images/HAvailabilityset.png)
 
@@ -140,7 +140,7 @@ Are availability zones the only form of High availability? No, there is also som
 
 17. Check the 'My organization is using the FortiFlex subscription service' box.
 
-18. You were provided FortFlex tokens, you will use those tokens to license these firewalls. **Do not copy the tokens in the screenshot below**.
+18. You were provided FortiFlex tokens, you will use those tokens to license these firewalls. **Do not copy the tokens in the screenshot below**.
 
 19. Enter one of the provided tokens for FortiGate A.
 
@@ -167,7 +167,7 @@ Are availability zones the only form of High availability? No, there is also som
 29. If needed, scroll down to Accelerated networking and select disabled.
 
     !!! Note "Azure Accelerated Networking"
-        Azure Accelerated Networking uses hardware-based virtualization to directly link a VM's network interface (NIC) to its network, bypassing the host's virtual switch and improving performance. We don’t need this in our lab. In a production enviroment you can turn on accellerated network to tell Azure to deploy the SR-IOV NIC driver rather than the standard driver, giving better performance.
+        Azure Accelerated Networking uses hardware-based virtualization to directly link a VM's network interface (NIC) to its network, bypassing the host's virtual switch and improving performance. We don’t need this in our lab. In a production environment you can turn on accelerated networking to tell Azure to deploy the SR-IOV NIC driver rather than the standard driver, giving better performance.
 
 30. Confirm your configuration looks like the screenshot below.
 
@@ -178,7 +178,7 @@ Are availability zones the only form of High availability? No, there is also som
 
     ## Load Balancer Setup
 
-31. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces. (
+31. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces.
 
     Your Quest Map
     
@@ -224,7 +224,7 @@ Are availability zones the only form of High availability? No, there is also som
 
     ## Deployment Verification
 
-39. Eventually your screen will refresh show something similar to the one below.
+39. Eventually your screen will refresh and show something similar to the one below.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image35.png)
 
@@ -242,7 +242,7 @@ Let's login to each FortiGate to ensure it is functional.
 5.	Login with username fortinetuser.
 6.	Password is PizzaDay12345!
 7.	Skip the startup wizard.
-8.	If you are taken to the dashboard, congratulations you FortiGate-A is functional.
+8.	If you are taken to the dashboard, congratulations your FortiGate-A is functional.
 9.	Now let’s check on FortiGate B, navigate back to the hub-studentXX-lab-rg.
 10.	If necessary, click on page 2 at the bottom of the screen, and find azlab-FGT-B-nic4 and click on it.
 11.	Note the Public IP address and copy it.

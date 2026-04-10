@@ -11,7 +11,7 @@ In this section, we'll deploy spoke networks and test virtual machines to valida
 
 ## Architecture Overview
 
-There are two common methods for deploying applications: Hub and Spoke and using a "Protected Subnet:. Remember the subnet "ProtectedA" we created? That is an example of a protected subnet where we can deploy virtual machines. For example, we could put FortiManager and FortiAnalyzer here. Now you are going to build a hub and spoke (if your mind just thought of SD-WAN, shoo that idea away, as that is not they type of hub and spoke we are talking about in this context). We are going to build VNet spokes and build the routing needed to direct that traffic through the connectivity hub.  
+There are two common methods for deploying applications: Hub and Spoke and using a "Protected Subnet". Remember the subnet "ProtectedA" we created? That is an example of a protected subnet where we can deploy virtual machines. For example, we could put FortiManager and FortiAnalyzer here. Now you are going to build a hub and spoke (if your mind just thought of SD-WAN, shoo that idea away, as that is not the type of hub and spoke we are talking about in this context). We are going to build VNet spokes and build the routing needed to direct that traffic through the connectivity hub.  
 
 <div class="grid cards" markdown>
 
@@ -124,7 +124,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 23. Set the Virtual machine name to `vm-frontend-app1`.
 
-24. Set Region to Canada Central.
+24. Set Region to US East.
 
 25. Under availability options select No infrastructure redundancy required.
 
@@ -251,7 +251,7 @@ Routing in Azure differs from traditional datacenter environments because it’s
     ![](images/AzureUDR4.png)
 11. Now that we have created a routing table, we need to get the IP address of the Internal load balancer located in the hub. We are going to use it as our destination for all outbound traffic.
 12. Open a new browser tab and login to Azure and go to the rg-hub-azlab route group.
-13. Scroll down in the Resources area until you see azlab-internalloadblancer and click on it. 
+13. Scroll down in the Resources area until you see azlab-internalloadbalancer and click on it. 
     ![](images/AzureUDR5.png)
 14. You may be wondering where the IP address is, look for the show more button as shown in the screen shot below.
     ![](images/AzureUDR6.png)

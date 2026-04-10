@@ -5,12 +5,12 @@ Now that we have peered our VNets and built our routing tables everything is rea
 1.	First, let’s refresh our memories of which port each is connected to the Public and Private subnets. This will help us to write our firewall rules.
 2.	Use the picture below to help you map your interfaces.
     ![](images/FirewallPolicy1.png)
-3.  Navigate to your rg-azlab-hub resource group. Use the search bar at the top if needed. 
+3.  Navigate to your rg-hub-azlab resource group. Use the search bar at the top if needed. 
 4.	Click on azlab-FGT-A.
 5.	Scroll down until you see the public IP address on the right-hand side. Note your IP address will be different from the one below.
     ![](images/FirewallPolicy2.png)
 6.  Copy the address, go to a new tab in your browser and enter https:// then paste the IP address of FortiGate-A. Hit enter on the keyboard.
-7.	Login in with username: fortinetuser Password PizzaDay12345!
+7.	Log in with username: fortinetuser Password PizzaDay12345!
 8.	On the left-hand side, navigate to Network and then Click on Interfaces. 
     ![](images/FirewallPolicy3.png)
 # Question 1: using the diagram at the start of this task, which interface is connected to the public subnet?
@@ -54,12 +54,12 @@ Now that we know our interface mappings, let’s create our policy.
 8. Click OK.
 9. Repeat this process for the Backend subnet.
     ![](images/FirewallPolicy8.png)
-   We are now going to create two static routes. One to the frontend VNet and the other to the backend VNet. We are now going to create two static routes. One to the frontend VNet and the other to the backend VNet.
+   We are now going to create two static routes. One to the frontend VNet and the other to the backend VNet.
 
 10. We need to use the IP address of the internal load balancer as our next hop.
 11. Go back to your tab with the Azure Portal.
 12. Navigate to rg-hub-azlab.
-13. Click on azlab-interlaloadbalancer.
+13. Click on azlab-internalloadbalancer.
 14. Find the private IP address of the load balancer, note it will be different than the one in the screenshot below. 
     ![](images/FirewallPolicy9.png)
 15. Return to your FortiGate A browser tab. 
@@ -105,7 +105,7 @@ Remember back in the beginning we created a bastion? We are going to use that no
 
 Modify Firewall Rules to permit East-West Traffic
 
-Now we need to permit traffic to go from one spoke to the other, or East-West. We need to create the firewall polices first.
+Now we need to permit traffic to go from one spoke to the other, or East-West. We need to create the firewall policies first.
 
 1.	Navigate back to your browser tab that has the admin interface for FortiGate-A open.
 2.	Navigate to Policy & Objects then click on Firewall Policy. 
@@ -126,15 +126,15 @@ Testing East-West Traffic
 3.	The command will now work as the policy permits it. 
 4.	Hit Ctrl C to stop the ping.
     ![](images/TestingRound1.png)
-5.  Repeat this process on the Frontend machine, but pint 192.168.2.5, which is the IP of the backend app.
+5.  Repeat this process on the Frontend machine, but ping 192.168.2.5, which is the IP of the backend app.
 6.	The ping is successful! 
 7.	Hit Ctrl C to stop the ping.
 8.	Please move to the Clean up task to begin shutting down the VM’s if you don’t shut them down, they will incur charges to your Azure Subscription!
 
-##Clean up!
+## Clean up!
 
 1.	In the Azure portal, navigate to your rg-hub-azlab resource group.
-2.	In the resource section click on the Type column to sort x.
+2.	In the resource section click on the Type column to sort it.
     ![](images/Cleanup1.png)
 3.  Notice all our virtual machines are now in one section!
 4.	Right click on each Virtual machine and open it in a new tab. 
@@ -142,7 +142,7 @@ Testing East-West Traffic
 5.  In each tab you just opened click on the Stop button as shown in the screenshot above.
 6.	Click Yes to the pop-up asking you to confirm. 
 7.	Please ensure all tabs show the device as stopped.
-8.	You can tell it’s stopped with the Stop button is greyed out and the Start button is available.
+8.	You can tell it’s stopped when the Stop button is greyed out and the Start button is available.
     ![](images/Cleanup3.png)
 9. If you will not use this lab again it is best to delete all resources, you can do this by going to the resource group opening resources and selecting Delete!. This way you are not charged for the Azure resources you created. 
 
@@ -151,4 +151,4 @@ Testing East-West Traffic
 
 
 ---
-**Next Step:** [Appendix: Adavanced Operations](05-advanced-operations.md) 
+**Next Step:** [Appendix: Advanced Operations](05-advanced-operations.md) 

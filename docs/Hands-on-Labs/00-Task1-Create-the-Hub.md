@@ -75,7 +75,7 @@ Your Quest Map
     
     ## Azure Bastion Setup
 
-    We are now going to create an Azure Bastion which is a **paid** service that provides secure RDP/SSH connectivity to your virtual machines over TLS. Azure Bastion allows you to RDP/SSH into your various virtual machines without having to assign a public IP to every virtual machine (Psst! Public IP addresses cost money in Azure!). Using a Bastion helps keep your costs lower as you only need one public IP address instead of one for each virtual maching you want to access!
+    We are now going to create an Azure Bastion which is a **paid** service that provides secure RDP/SSH connectivity to your virtual machines over TLS. Azure Bastion allows you to RDP/SSH into your various virtual machines without having to assign a public IP to every virtual machine (Psst! Public IP addresses cost money in Azure!). Using a Bastion helps keep your costs lower as you only need one public IP address instead of one for each virtual machine you want to access!
     
     Your Quest Map
 
@@ -95,7 +95,7 @@ Your Quest Map
 
 25. Click the Next button on the bottom of the screen.
 
-26. Change the IP address to 10.2.0.0 /16 as shown below. If you see an error about malformed IP address, make sure there is not space after the IP address. You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
+26. Change the IP address to 10.2.0.0 /16 as shown below. If you see an error about malformed IP address, make sure there is no space after the IP address. You may see a message about the address prefix overlapping with another virtual network. You can ignore this message as we will not be networking with this other virtual network.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image15.png)
 
@@ -126,13 +126,13 @@ Your Quest Map
 
      ![](images/image17.png)
     
-3.  Notice the subnets we created earlier are listed here. Let's create four new subnets.
+3.  Notice the subnets we created earlier are listed here. Let's create five new subnets.
 
 4.  Click on the Subnet button (see screenshot above).
 
 5.  Change the name to `Public`.
 
-6.  Ensure the starting address is 10.2.2.0 and the Size is /24 the click Add.
+6.  Ensure the starting address is 10.2.2.0 and the Size is /24 then click Add.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image18.png)
 

@@ -106,7 +106,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 16. We are now going to create the virtual machine to represent our 'app' in this spoke.
 
-17. Search for rg-hub-azlab in the search box at the top of the screen.
+17. Search for hub-studentXX-lab-rg in the search box at the top of the screen.
 
 18. Once you open the resource group click Create.
 
@@ -120,7 +120,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image45.png)
 
-22. Ensure your resource group is set to rg-hub-azlab.
+22. Ensure your resource group is set to hub-studentXX-lab-rg.
 
 23. Set the Virtual machine name to `vm-frontend-app1`.
 
@@ -205,7 +205,7 @@ Your Quest Map
 
 ![](images/youarehere10.jpg)
 
-1. Navigate to your resource group az-hub-azlab. Use the search bar at the very top of your screen to search for it if you need to.
+1. Navigate to your resource group hub-studentXX-lab-rg. Use the search bar at the very top of your screen to search for it if you need to.
 2. In the Resources menu, scroll down until you can see the vnet-hub-azlab. It may be at the very bottom and click on it. 
 
     ![](images/AzureVNetpeering1.png)
@@ -235,14 +235,14 @@ Ok we’ve built our ‘roads’ but we need to build the UDR (signpost), so Azu
 
 Routing in Azure differs from traditional datacenter environments because it’s based on **system-managed routing tables** rather than fully manual configurations. In an on-premises setup, firewalls and routers typically control all subnet-to-subnet routing directly, and VPNs often require explicit routes (static or dynamically advertised). In Azure, however, each virtual network (VNet) automatically creates routes between its subnets, meaning traffic **could** bypass a firewall unless you specifically configure User-Defined Routes (**UDR**s) to force it through. Similarly, when using VPN gateways, Azure handles the propagation of routes into the VNet, but you’ll often need to fine-tune UDRs to ensure traffic flows through security appliances like FortiGate rather than taking the default system path. This shift from hardware-centric to platform-managed routing is a key difference to keep in mind when designing secure architectures.
 
-1.	Navigate back to the rg-hub-azlab. 
+1.	Navigate back to the hub-studentXX-lab-rg. 
 2.	Click Create.
     ![](images/AzureUDR1.png)
 3.  In the Search the Marketplace text box type Route Table and hit enter on the keyboard.
 4.	In the Route table box, click on create then select Route table.
     ![](images/AzureUDR2.png)
-5.  Ensure the Resource group is set to rg-hub-azlab.
-6.	Set the Region to Canada Central.
+5.  Ensure the Resource group is set to hub-studentXX-lab-rg.
+6.	Set the Region to US East.
 7.	Set the Name to udr-frontend-spoke
 8.	Click Review and Create.
 9.	Click Create.
@@ -250,7 +250,7 @@ Routing in Azure differs from traditional datacenter environments because it’s
 10. Wait until the deployment is complete and looks similar to the screenshot below. 
     ![](images/AzureUDR4.png)
 11. Now that we have created a routing table, we need to get the IP address of the Internal load balancer located in the hub. We are going to use it as our destination for all outbound traffic.
-12. Open a new browser tab and login to Azure and go to the rg-hub-azlab route group.
+12. Open a new browser tab and login to Azure and go to the hub-studentXX-lab-rg resource group.
 13. Scroll down in the Resources area until you see azlab-internalloadbalancer and click on it. 
     ![](images/AzureUDR5.png)
 14. You may be wondering where the IP address is, look for the show more button as shown in the screen shot below.
@@ -281,8 +281,8 @@ Challenge Time: Now that you have created the Route table and UDR for connectivi
 
 Create the Route table
 
-- Resource group: rg-hub-azlab
-- Region: Canada Central
+- Resource group: hub-studentXX-lab-rg
+- Region: US East
 - Name: udr-backend-spoke
 - Propagate gateway routes? No
 

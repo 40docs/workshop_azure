@@ -257,7 +257,7 @@ Let's login to each FortiGate to ensure it is functional.
 
 **Please only complete this section if you had a licensing issue on the FortiGates.**
 
-1.	Navigate back to your open Azure tab and find your rg-hub-azlab resource group.
+1.	Navigate back to your open Azure tab and find your hub-studentXX-lab-rg resource group.
 2.	In the resource section find azlab-FTG-A and click on it. 
 3.	Click on Stop.  
 ![](images/testingfortigate.jpg)

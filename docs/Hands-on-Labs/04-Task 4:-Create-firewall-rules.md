@@ -5,7 +5,7 @@ Now that we have peered our VNets and built our routing tables everything is rea
 1.	First, let’s refresh our memories of which port each is connected to the Public and Private subnets. This will help us to write our firewall rules.
 2.	Use the picture below to help you map your interfaces.
     ![](images/FirewallPolicy1.png)
-3.  Navigate to your rg-hub-azlab resource group. Use the search bar at the top if needed. 
+3.  Navigate to your hub-studentXX-lab-rg resource group. Use the search bar at the top if needed. 
 4.	Click on azlab-FGT-A.
 5.	Scroll down until you see the public IP address on the right-hand side. Note your IP address will be different from the one below.
     ![](images/FirewallPolicy2.png)
@@ -58,7 +58,7 @@ Now that we know our interface mappings, let’s create our policy.
 
 10. We need to use the IP address of the internal load balancer as our next hop.
 11. Go back to your tab with the Azure Portal.
-12. Navigate to rg-hub-azlab.
+12. Navigate to hub-studentXX-lab-rg.
 13. Click on azlab-internalloadbalancer.
 14. Find the private IP address of the load balancer, note it will be different than the one in the screenshot below. 
     ![](images/FirewallPolicy9.png)
@@ -77,7 +77,7 @@ Now for some fun, let’s test our north-south traffic.
 Remember back in the beginning we created a bastion? We are going to use that now to access our “apps”.
 
 1. Return to the browser tab with your azure portal.
-2.	Navigate to rg-hub-azlab. 
+2.	Navigate to hub-studentXX-lab-rg. 
 3. Scroll down until you find vm-frontend-app1 and click on it.
     ![](images/TestingNorthSouth1.png)
 4.  Click on the Connect drop down.
@@ -133,7 +133,7 @@ Testing East-West Traffic
 
 ## Clean up!
 
-1.	In the Azure portal, navigate to your rg-hub-azlab resource group.
+1.	In the Azure portal, navigate to your hub-studentXX-lab-rg resource group.
 2.	In the resource section click on the Type column to sort it.
     ![](images/Cleanup1.png)
 3.  Notice all our virtual machines are now in one section!

@@ -15,14 +15,14 @@ Now that we have peered our VNets and built our routing tables everything is rea
     ![](images/FirewallPolicy3.png)
 # Question 1: using the diagram at the start of this task, which interface is connected to the public subnet?
 
-- [ ] Port 1
-- [X] Port 2
+- [X] Port 1
+- [ ] Port 2
 - [ ] Port 3
 - [ ] Port 4 
 
 # Question 2: Which port is connected to the internal or private subnet?
-- [X] Port 1
-- [ ] Port 2
+- [ ] Port 1
+- [X] Port 2
 - [ ] Port 3
 - [ ] Port 4 
 

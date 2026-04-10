@@ -141,6 +141,8 @@ The fastest way to stop all charges is to delete every resource inside the resou
 4.	Type the confirmation text in the prompt and click **Delete** to confirm.
 5.	Azure will now remove all virtual machines, networks, load balancers, and FortiGates that were created during this lab. This may take several minutes.
 
+![](images/cleanup_fixed.png)
+
 !!! warning
     Deletion is irreversible. Make sure you have saved anything you want to keep before proceeding.
 

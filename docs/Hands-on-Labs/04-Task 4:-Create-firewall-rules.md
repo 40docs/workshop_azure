@@ -133,15 +133,16 @@ Testing East-West Traffic
 
 ## Clean up!
 
-The simplest way to stop all charges is to delete the entire resource group, which removes every resource inside it in one action.
+The fastest way to stop all charges is to delete every resource inside the resource group in a single action.
 
 1.	In the Azure portal, navigate to your hub-studentXX-lab-rg resource group.
-2.	At the top of the resource group blade, click **Delete resource group**.
-3.	Type the resource group name to confirm, then click **Delete**.
-4.	Azure will now remove all virtual machines, networks, load balancers, and FortiGates that were created during this lab. This may take several minutes.
+2.	In the **Resources** list, click the checkbox in the header row (next to **Name**) to select all resources.
+3.	Click **Delete** at the top of the resource list.
+4.	Type the confirmation text in the prompt and click **Delete** to confirm.
+5.	Azure will now remove all virtual machines, networks, load balancers, and FortiGates that were created during this lab. This may take several minutes.
 
 !!! warning
-    Deleting the resource group is irreversible. Make sure you have saved anything you want to keep before proceeding.
+    Deletion is irreversible. Make sure you have saved anything you want to keep before proceeding.
 
 ## You have Completed your Quest!!!
  ![](images/Congrats.png)

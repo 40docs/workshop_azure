@@ -2,7 +2,7 @@
 ![](images/image55.png)
 Now that we have peered our VNets and built our routing tables everything is ready, right? Not quite! Remember, we pointed the UDR towards the load balancer, which then passes traffic to the FortiGate for inspection. We need to set a policy in the firewall to permit traffic. Let’s start with North-South traffic like traffic destined to the Internet.
 
-1.	First, let’s refresh our memories of which port each is connected to the Public and Private subnets. This will help us to write our firewall rules.
+1.	First, let’s refresh our memories of which port is connected to the Public and Private subnets. This will help us to write our firewall rules.
 2.	Use the picture below to help you map your interfaces.
     ![](images/FirewallPolicy1.png)
 3.  Navigate to your hub-studentXX-lab-rg resource group. Use the search bar at the top if needed. 
@@ -13,18 +13,9 @@ Now that we have peered our VNets and built our routing tables everything is rea
 7.	Log in with username: fortinetuser Password PizzaDay12345!
 8.	On the left-hand side, navigate to Network and then Click on Interfaces. 
     ![](images/FirewallPolicy3.png)
-# Question 1: using the diagram at the start of this task, which interface is connected to the public subnet?
+ Question 1: using the diagram at the start of this task, which interface is connected to the public subnet?
 
-- [X] Port 1
-- [ ] Port 2
-- [ ] Port 3
-- [ ] Port 4 
-
-# Question 2: Which port is connected to the internal or private subnet?
-- [ ] Port 1
-- [X] Port 2
-- [ ] Port 3
-- [ ] Port 4 
+ Question 2: Which port is connected to the internal or private subnet?
 
 Now that we know our interface mappings, let’s create our policy.
 
@@ -89,10 +80,11 @@ Remember back in the beginning we created a bastion? We are going to use that no
     ![](images/TestingNorthSouth4.png)
 10. Type curl www.google.com and then press enter. This will connect with google.com, do not be surprised if a bunch of text pops up on your screen, that means you were successful in accessing the internet!
     ![](images/TestingNorthSouth5.png)
-11. Repeat this testing on the back end virtual machine. 
-12. Now let’s test if we can ping our front-end server, on the backend virtual machine type ping 192.168.1.5, which is the IP address of the frontend app. 
-13. It will fail!
-14. Why? Because we need to permit this traffic in the firewall. 
+11. Repeat this testing on the backend virtual machine. 
+12. Now let’s test if we can ping our front-end server. Go back to the tab that has the Azure portal open and find your resource group. Locate the vm-frontend-app1 in the list of resources and open it. Scroll down to find the private IP address and copy it.
+13. Go back to your backend server and ping that IP address. 
+14. It will fail!
+15. Why? Because we need to permit this traffic in the firewall. 
 
 
 ## Enabling East-West Traffic and Testing
@@ -116,7 +108,7 @@ Now we need to permit traffic to go from one spoke to the other, or East-West. W
 Testing East-West Traffic
 
 1.	If you don’t already have bastion sessions connected to the Frontend and Backend VM’s. Please reopen them in a separate tab. 
-2.	On the Backend VM type ping 192.168.1.5. 
+2.	On the Backend VM type ping the ip address of your Frontend App.
 3.	The command will now work as the policy permits it. 
 4.	Hit Ctrl C to stop the ping.
     ![](images/TestingRound1.png)

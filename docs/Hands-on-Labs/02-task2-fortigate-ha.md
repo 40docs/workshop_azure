@@ -101,9 +101,9 @@ Your Quest Map
   
 15. Look for the Previous Generations drop down and expand it.
     
-17. Click on F4.
+16. Click on F4.
     
-18. Click on Select.
+17. Click on Select.
     
   ![](images/image27a.png) 
 
@@ -136,40 +136,40 @@ Are availability zones the only form of High availability? No, there is also som
   
 ## Licensing Configuration
 
-16. Scroll down.
+19. Scroll down.
 
-17. Check the 'My organization is using the FortiFlex subscription service' box.
+20. Check the 'My organization is using the FortiFlex subscription service' box.
 
-18. You were provided FortiFlex tokens, you will use those tokens to license these firewalls. **Do not copy the tokens in the screenshot below**.
+21. You were provided FortiFlex tokens, you will use those tokens to license these firewalls. **Do not copy the tokens in the screenshot below**.
 
-19. Enter one of the provided tokens for FortiGate A.
+22. Enter one of the provided tokens for FortiGate A.
 
-20. Enter one of the provided tokens for FortiGate B.
+23. Enter one of the provided tokens for FortiGate B.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image28.png)
 
-21. Click Next.
+24. Click Next.
 
-22. We will now map the subnets we created earlier to the FortiGate.
+25. We will now map the subnets we created earlier to the FortiGate.
 
-23. Click on the dropdown menu beside Virtual network and select vnet-hub-azlab.
+26. Click on the dropdown menu beside Virtual network and select vnet-hub-azlab.
 
-24. Click on the dropdown menu beside External subnet and select Public.
+27. Click on the dropdown menu beside External subnet and select Public.
 
-25. Click on the dropdown menu beside Internal subnet and select Private
+28. Click on the dropdown menu beside Internal subnet and select Private
 
-26. Click on the HA Sync subnet dropdown and select HA_Intra-Cluster.
+29. Click on the HA Sync subnet dropdown and select HA_Intra-Cluster.
 
-27. Click on the HA Management subnet dropdown and select Management.
+30. Click on the HA Management subnet dropdown and select Management.
 
-28. Notice we are also creating a new subnet called Protected A subnet. Leave this dropdown as it is with the pre-selected Protected A subnet. 
+31. Notice we are also creating a new subnet called Protected A subnet. Leave this dropdown as it is with the pre-selected Protected A subnet. 
 
-29. If needed, scroll down to Accelerated networking and select disabled.
+32. If needed, scroll down to Accelerated networking and select disabled.
 
     !!! Note "Azure Accelerated Networking"
         Azure Accelerated Networking uses hardware-based virtualization to directly link a VM's network interface (NIC) to its network, bypassing the host's virtual switch and improving performance. We don’t need this in our lab. In a production environment you can turn on accelerated networking to tell Azure to deploy the SR-IOV NIC driver rather than the standard driver, giving better performance.
 
-30. Confirm your configuration looks like the screenshot below.
+33. Confirm your configuration looks like the screenshot below.
 
      ![](images/image29.png)
     
@@ -178,22 +178,22 @@ Are availability zones the only form of High availability? No, there is also som
 
     ## Load Balancer Setup
 
-31. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces.
+34. Now we will create public IP addresses for the external load balancer and FortiGate management interfaces.
 
     Your Quest Map
     
     ![](images/Youarehere5.jpg)
 
-32. Click create new under the External Load Balancer and edit the name to match the screenshot below.
+35. Click create new under the External Load Balancer and edit the name to match the screenshot below.
 
     ![](images/image31.png)
 
-33. Click OK at the bottom of the screen.
+36. Click OK at the bottom of the screen.
 
      Your Quest Map
     ![](images/youarehere6.jpg)
 
-34. Repeat this process for FortiGate A and B management and match the name in the screen shots below.
+37. Repeat this process for FortiGate A and B management and match the name in the screen shots below.
 
     **FortiGate A**
 
@@ -212,23 +212,23 @@ Are availability zones the only form of High availability? No, there is also som
 
         **The Bastion we deployed is still valuable!** We'll use it later to access our test VMs in the spoke networks — that's exactly the use case it was built for.
 
-35. When you are finished, ensure your configuration looks like the screenshot below.
+38. When you are finished, ensure your configuration looks like the screenshot below.
 
     ![](images/image34.png)
 
-36. Click Next at the bottom of the page until you reach the Review and create page.
+39. Click Next at the bottom of the page until you reach the Review and create page.
 
-37. Allow the final validation to run. This may take up to 30 seconds.
+40. Allow the final validation to run. This may take up to 30 seconds.
 
-38. Click Create at the bottom of the page.
+41. Click Create at the bottom of the page.
 
     ## Deployment Verification
 
-39. Eventually your screen will refresh and show something similar to the one below.
+42. Eventually your screen will refresh and show something similar to the one below.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image35.png)
 
-40. When your deployment is complete it will look similar to the screen shot below. This can take a few minutes to display.
+43. When your deployment is complete it will look similar to the screen shot below. This can take a few minutes to display.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image36.png)
 

@@ -4,7 +4,7 @@ Welcome! It's time to start your quest to the cloud! First up we must put on our
 
 1. Open a web browser and navigate to [portal.azure.com](https://portal.azure.com)
 2. Login using the username and password provided to you by your instructor.
-3. If a message pops up asking to tour Azure, you can click Maybe later. (or if you want a side quest, go for it!)
+3. If a message pops up asking you to tour Azure, you can click Maybe later. (or if you want a side quest, go for it!)
 
 ## On this page
 - [Virtual Network Planning](#virtual-network-planning)
@@ -67,7 +67,7 @@ Your Quest Map
 
 10. Type `vnet-hub-azlab` in the Virtual Network name textbox.
 
-11. Ensure Region is set to US East. (We are using the US due to the Azure subscription we are using for this lab environment)
+11. Ensure Region is set to US East. (We are using US East due to the Azure subscription we are using for this lab environment)
 
 12. Click Next.
 

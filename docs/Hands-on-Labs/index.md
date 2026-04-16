@@ -1,6 +1,6 @@
 # Azure Workshop
 
-This lab guide will walk you through creating a comprehensive Azure connectivity hub that manages all ingress and egress traffic for your deployment. You'll learn how to set up resource groups, virtual networks, Azure Bastion, and FortiGate firewalls in a high-availability configuration.
+This lab guide will walk you through creating a comprehensive Azure connectivity hub that manages all ingress and egress traffic for your deployment. You'll learn about resource groups, set up virtual networks, Azure Bastion, and FortiGate firewalls in a high-availability configuration.
 
 ## What You'll Build
 
@@ -17,8 +17,8 @@ This lab guide will walk you through creating a comprehensive Azure connectivity
 
 Before starting this lab, ensure you have:
 
-- An active Azure subscription with appropriate permissions
-- Access to the Azure portal
+- Your pod assignment number from your instuctor
+- The supplied username and password for the Azure portal
 - Basic understanding of networking concepts
 - Familiarity with Azure resource management
 
@@ -43,7 +43,7 @@ Upon completion of this lab, you will have:
 
 ## Time Estimate
 
-- **Total Lab Time**: 3 hours
+- **Total Lab Time**: 3-4 hours
 - **Prerequisites Setup**: 15 minutes
 - **Core Infrastructure**: 2-2.5 hours
 - **Testing & Validation**: 45-60 minutes
@@ -51,11 +51,6 @@ Upon completion of this lab, you will have:
 !!! tip "Lab Tips"
     - Take your time with each section and validate configurations before proceeding
     - Screenshots are provided throughout to help verify your progress
-
-
-## Considerations
-
-When setting up your FortiGate lab in Azure, it’s important to use a personal or test Azure subscription rather than your company’s production account. This avoids unnecessary costs, security risks, or accidental conflicts with corporate resources. Additionally, always remember to spin down or delete lab resources when you’re not actively using them—virtual machines, storage, and networking services continue to incur charges as long as they’re running, even if idle. This practice keeps your lab environment cost-efficient and prevents surprises on your bill.
 
 ---
 

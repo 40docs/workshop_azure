@@ -2,7 +2,7 @@
 
 Welcome! It's time to start your quest to the cloud! First up we must put on our boots and saddle up...Oh wait! This isn't that type of quest, instead you get to login to Azure! Exciting! 
 
-1. Open a web browser and navigate to portal.azure.com
+1. Open a web browser and navigate to [portal.azure.com] (https://portal.azure.com)
 2. Login using the username and password provided to you by your instructor.
 3. If a message pops up asking to tour Azure, you can click Maybe later. (or if you want a side quest, go for it!)
 

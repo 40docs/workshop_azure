@@ -102,9 +102,7 @@ Your Quest Map
 16. Click on F4.
     
 17. Click on Select.
-    
-   ![](images/image27a.png) 
-
+![](images/image27a.png) 
 18. Ensure Availability Option is set to Availability Zones.
 
 ## What are availability zones?

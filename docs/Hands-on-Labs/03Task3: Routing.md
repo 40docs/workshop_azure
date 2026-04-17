@@ -270,9 +270,9 @@ Do you remember that old phrase "too many cooks in the kitchen"? We can loosely 
 24.	Then click on add.
   ![](images/AzureUDR12.png)
 25.	Set route name as to_hub.
-26.	Set Destination type to IP Addresses
-27.	Set Destination IP addresses to 0.0.0.0/0.
-28.	Set next hop type to Virtual appliance
+26.	Set Destination type to IP Addresses.
+27.	Set Destination IP addresses to 0.0.0.0/0
+28.	Set next hop type to Virtual appliance.
 29.	Paste the IP address of your internal load balancer. (do not copy the address in the screenshot below)
 30.	Click Add.
     ![](images/AzureUDR13.png)

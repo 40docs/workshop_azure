@@ -94,7 +94,7 @@ Your Quest Map
      ![](images/image24.png)
     
 13. Ensure FortiGate Image is set to 7.4.11. FortiGate image versions in these drop downs may change over time. If 7.4.11 is not available choose the latest version of 7.4.x.
-  
+     ![](images/image27.png) 
 14. Click on the Change Size link in the Size section. Since we are running in a lab environment we do not need an 8vCPU VM. We are going to use a 4 vCPU size instead.
   
 15. Look for the Previous Generations drop down and expand it.

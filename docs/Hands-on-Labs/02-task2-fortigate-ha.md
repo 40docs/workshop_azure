@@ -117,7 +117,7 @@ Wouldn’t it be nice if we all had a spare home? If something happens to one of
 
 ![](images/Azuremap.png) 
    
-Do you see that Azure has data centers all over the world? Neat eh!? Azure groups data centers into regions. For example, Canada has two Regions: Canada Central and Canada East. Many Azure regions provide availability zones. According to learn.microsoft.com Availability Zones are separated groups of datacenters within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones.
+Do you see that Azure has data centers all over the world? Neat eh!? Azure groups data centers into regions. For example, Canada has two Regions: Canada Central and Canada East. Many Azure regions provide availability zones. According to learn.microsoft.com Availability Zones are separated groups of data centers within a region. Each availability zone has independent power, cooling, and networking infrastructure, so that if one zone experiences an outage, then regional services, capacity, and high availability are supported by the remaining zones.
 
 ![](images/Regions.png)
 

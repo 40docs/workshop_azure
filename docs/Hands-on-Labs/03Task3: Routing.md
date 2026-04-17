@@ -262,7 +262,7 @@ Do you remember that old phrase "too many cooks in the kitchen"? We can loosely 
 
 19. Click on Associate.
     ![](images/AzureUDR10.png)
-20. In the menu that pops out of the left-hand side of the screen, search for your vnet-app-frontend and ensure the subnet says default.
+20. In the menu that pops out of the right-hand side of the screen, search for your vnet-app-frontend and ensure the subnet says default.
     ![](images/AzureUDR11.png)
 21.	Click Ok at the bottom of the pop out menu.
 22.	Now we are going to add a route. 

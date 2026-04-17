@@ -14,7 +14,7 @@ This is the simplest building block, a single FortiGate VM is used and provides 
 
 ### Active-passive HA with SDN connector failover
 
-Active-passive HA with SDN connector failover: This design deploys two FortiGate-VMs in active-passive mode connected using the unicast FortiGate clustering protocol FGCP HA protocol. This protocol synchronizes the configuration. On failover, the passive FortiGate takes control and issues API calls to Azure to shift the public IP address and update the internal user-defined routing to itself. Shifting the public IP address and gateway IP addresses of the routes takes time for Azure to complete. 
+Active-passive HA with SDN connector failover: This design deploys two FortiGate-VMs in active-passive mode connected using the unicast [FortiGate Clustering Protocol FGCP HA protocol](https://docs.fortinet.com/document/fortigate/7.6.6/administration-guide/62403/fgcp). This protocol synchronizes the configuration. On failover, the passive FortiGate takes control and issues API calls to Azure to shift the public IP address and update the internal user-defined routing to itself. Shifting the public IP address and gateway IP addresses of the routes takes time for Azure to complete. 
 
 ![](images/APSND.jpg)
 
@@ -62,7 +62,7 @@ Your Quest Map
 
     ![](images/image21.png)
 
-3. Enter FortiGate in the search box then click on Fortinet FortiGate Next-Generation Firewall.
+3. Enter FortiGate in the search box then click on Fortinet FortiGate Next-Generation Firewall. (If entering FortGate doesn't bring up the option, then search for FortiGate Next, that should bring up the option in the dropdown. 
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image22.png)
 
@@ -87,7 +87,7 @@ Your Quest Map
 
 10. Type the same password in the Confirm password box: `PizzaDay12345!`
 
-11. Set the FortiGate Name Prefix to azlab
+11. Set the FortiGate Name Prefix to `azlab`.
 
 12. Click Next.
 
@@ -95,7 +95,7 @@ Your Quest Map
     
 13. Ensure FortiGate Image is set to 7.4.11. FortiGate image versions in these drop downs may change over time. If 7.4.11 is not available choose the latest version of 7.4.x.
     
-  ![](images/image27.png) 
+   ![](images/image27.png) 
   
 14. Click on the Change Size link in the Size section. Since we are running in a lab environment we do not need an 8vCPU VM. We are going to use a 4 vCPU size instead.
   
@@ -105,7 +105,7 @@ Your Quest Map
     
 17. Click on Select.
     
-  ![](images/image27a.png) 
+   ![](images/image27a.png) 
 
 18. Ensure Availability Option is set to Availability Zones.
 
@@ -113,7 +113,7 @@ Your Quest Map
 
 ![](images/image25.png) 
 
-Wouldn’t it be nice if we all had a spare home? If something were to happen to one of them, we just move over to the other one! This analogy loosely explains availability zones as they help create redundancy and high availability. Take a look at the Azure Region Map below: 
+Wouldn’t it be nice if we all had a spare home? If something happens to one of them, we just move over to the other one! This analogy loosely explains availability zones as they help create redundancy and high availability. Take a look at the Azure Region Map below: 
 
 ![](images/Azuremap.png) 
    
@@ -123,11 +123,11 @@ Do you see that Azure has data centers all over the world? Neat eh!? Azure group
 
 To apply these concepts to our environment, look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other and have our passive FortiGate take over. 
 
-![](images/YouarehereAvail.png)
+ ![](images/ouarehereAvail.jpg)
 
 Are availability zones the only form of High availability? No, there is also something called an Availability Set. An availability set is deploying HA within a single data center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
 
-![](images/HAvailabilityset.png)
+ ![](images/HAvailabilityset.png)
 
  Microsoft offers different SLAs on Azure based on the deployment that you use:
 - Availability zone (AZ) (different datacenter in the same region): 99.99%

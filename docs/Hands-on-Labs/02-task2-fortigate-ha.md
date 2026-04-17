@@ -123,7 +123,7 @@ Do you see that Azure has data centers all over the world? Neat eh!? Azure group
 
 To apply these concepts to our environment, look at the diagram below, see how there is Availability Zone 1 and 2 in dashed blue boxes? Those FortiGates are deployed in two different data centers! If one data center goes down, we can fail over to the other and have our passive FortiGate take over. 
 
- ![](images/ouarehereAvail.jpg)
+ ![](images/YouarehereAvail.jpg)
 
 Are availability zones the only form of High availability? No, there is also something called an Availability Set. An availability set is deploying HA within a single data center. You can find more information here: https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview.
 

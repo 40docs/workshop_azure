@@ -94,8 +94,6 @@ Your Quest Map
      ![](images/image24.png)
     
 13. Ensure FortiGate Image is set to 7.4.11. FortiGate image versions in these drop downs may change over time. If 7.4.11 is not available choose the latest version of 7.4.x.
-    
-   ![](images/image27.png) 
   
 14. Click on the Change Size link in the Size section. Since we are running in a lab environment we do not need an 8vCPU VM. We are going to use a 4 vCPU size instead.
   
@@ -221,7 +219,7 @@ Are availability zones the only form of High availability? No, there is also som
 
 41. Click Create at the bottom of the page.
 
-    ## Deployment Verification
+## Deployment Verification
 
 42. Eventually your screen will refresh and show something similar to the one below.
 

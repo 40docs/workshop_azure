@@ -62,7 +62,7 @@ Your Quest Map
 
     ![](images/image21.png)
 
-3. Enter FortiGate in the search box then click on Fortinet FortiGate Next-Generation Firewall. (If entering FortGate doesn't bring up the option, then search for FortiGate Next, that should bring up the option in the dropdown. 
+3. Enter FortiGate in the search box then click on Fortinet FortiGate Next-Generation Firewall. (If entering FortiGate doesn't bring up the option, then search for FortiGate Next, that should bring up the option in the dropdown. 
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image22.png)
 

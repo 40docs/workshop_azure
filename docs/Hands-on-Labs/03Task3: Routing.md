@@ -138,7 +138,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 28. Scroll down until you see the Size option and click the dropdown.
 
-29. Select Standard_D2s_v3 -- 2 vcpus, 8GiB memory.
+29. Select Standard_D2s_v3 -- 2 vcpus, 8GiB memory. (Note, if the recommened sizes are greyed out, then just leave this at the default of Standard_D2s_v5)
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image47.png)
 
@@ -171,7 +171,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 40. Set the Public IP to none.
 
-41. Click delete NIC when VM is deleted. 
+41. Click delete NIC when VM is deleted. (you may have to scroll down a bit to see this)
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image51.png)
 
@@ -214,14 +214,14 @@ Your Quest Map
 
     ![](images/AzureVNetpeering2.png)
 
-4.  Enter frontend-spoke-to-hub in the Peering link name.
+4.  Enter `frontend-spoke-to-hub` in the Peering link name.
 5.	Click the dropdown arrow and start typing vnet-frontend-spoke and select it from the search results.
 6. Ensure the two checkboxes are highlighted as shown in the screenshot below. This section sets the peering settings for the other vnet (our frontend spoke in this case).
 
     ![](images/AzureVNetpeering3.png)
 
 7. Scroll down to Local virtual network summary. Here we are setting the peering settings for the hub vnet. 
-8. Name the peering link name hub-frontend-spoke. 
+8. Name the peering link name `hub-frontend-spoke`. 
 9. Ensure the first checkbox is clicked 
 10. Click Add. 
     ![](images/AzureVNetpeering4.png)
@@ -243,7 +243,7 @@ Do you remember that old phrase "too many cooks in the kitchen"? We can loosely 
 5.  Ensure the Resource group is set to hub-studentXX-lab-rg.
 6.  Set propagate gateway routes to No.
 7.	Set the Region to US East.
-8.	Set the Name to udr-frontend-spoke
+8.	Set the Name to `udr-frontend-spoke`
 9.	Click Review + Create.
 10.	Click Create.
     ![](images/AzureUDR3.png)

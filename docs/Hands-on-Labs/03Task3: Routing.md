@@ -165,7 +165,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
      ![](images/image50.png)
 
-38. Click the dropdown for Virtual Network and scroll until you find vnet-frontend-spoke and select it.
+38. Click the dropdown for Virtual Network and scroll until you find vnet-frontend and select it.
 
 39. Ensure the subnet is default (192.168.1.0/24).
 

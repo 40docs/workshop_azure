@@ -154,7 +154,7 @@ Are availability zones the only form of High availability? No, there is also som
 
 26. Click on the dropdown menu beside Virtual network and select vnet-hub-azlab.
 
-27. Click on the dropdown menu beside External subnet and select Public.
+27. Click on the dropdown menu beside External subnet and select Public. (You may have to scroll up!)
 
 28. Click on the dropdown menu beside Internal subnet and select Private
 
@@ -204,11 +204,11 @@ Are availability zones the only form of High availability? No, there is also som
     ![](images/image33.png)
 
     ??? info "Why Public IPs for FortiGate Management Instead of Bastion?"
-        Great question! In Task 1 we deployed Azure Bastion and talked about how it lets you access VMs without assigning them public IPs — so why are we giving each FortiGate its own management public IP?
+        Great question! In Task 1 we deployed Azure Bastion and talked about how it lets you access VMs without assigning them public IPs. So why are we giving each FortiGate its own management public IP?
 
         **Bastion is designed for RDP/SSH access to standard VMs.** It works by proxying a remote desktop or terminal session through the Azure portal. FortiGate management, on the other hand, is accessed through its own HTTPS web GUI and CLI (SSH), which have unique session handling, certificate management, and API endpoints that don't play nicely with the Bastion proxy. You need a direct HTTPS connection to the FortiGate's management interface for reliable day-to-day administration.
 
-        **In a production environment** you would typically lock down these management PIPs with Network Security Groups (NSGs) that restrict access to a set of known administrator source IPs. An NSG acts as a basic stateful firewall at the Azure networking layer — think of it as an access control list (ACL) attached to a subnet or NIC that filters traffic before it ever reaches the FortiGate. NSGs operate independently from FortiGate firewall policies, giving you defense in depth. You could also use a VPN or ExpressRoute for private management access and skip the public IPs entirely. For our lab, assigning public IPs to the management interfaces is the simplest way to get you hands-on with the FortiGate GUI quickly.
+        **In a production environment** you would typically lock down these management PIPs with Network Security Groups (NSGs), an azure feature, that restrict access to a set of known administrator source IPs. An NSG acts as a basic stateful firewall at the Azure networking layer. Think of it as an access control list (ACL) attached to a subnet or NIC that filters traffic before it ever reaches the FortiGate. NSGs operate independently from FortiGate firewall policies, giving you defense in depth. You could also use a VPN or ExpressRoute for private management access and skip the public IPs entirely. For our lab, assigning public IPs to the management interfaces is the simplest way to get you hands-on with the FortiGate GUI quickly.
 
         **The Bastion we deployed is still valuable!** We'll use it later to access our test VMs in the spoke networks — that's exactly the use case it was built for.
 
@@ -237,19 +237,21 @@ Let's login to each FortiGate to ensure it is functional.
 
 1.	Navigate to your hub-studentXX-lab-rg. Use the search bar at the top of the screen to search for it if needed.
 2.	In the list of resources click on azlab-FGT-nic4, this is the management interface.
-3.	Make a note of the IP address on the right-hand column. 
-4.	Open another browser tab and enter https://Your FortiGateA IP address, 
-5.	Login with username fortinetuser.
-6.	Password is PizzaDay12345!
-7.	Skip the startup wizard.
-8.	If you are taken to the dashboard, congratulations your FortiGate-A is functional.
-9.	Now let’s check on FortiGate B, navigate back to the hub-studentXX-lab-rg.
-10.	If necessary, click on page 2 at the bottom of the screen, and find azlab-FGT-B-nic4 and click on it.
-11.	Note the Public IP address and copy it.
-12.	In a new browser, open a tab to https://yourFortigateIPB Address
-13.	Login with Username fortinetuser
-14.	Password is PizzaDay12345!
-15.	If you see a screen that states you need to upload a license, perform the steps below, if you are taken to the dashboard after the wizard, your unit is functional, and you can skip ahead to Task 3 Deploy Applications and Configure the Network.
+3.	Make a note of the IP address on the right-hand column and then copy it. 
+4.	Open another browser tab and enter https://Your FortiGateA IP address,
+5.	If you get a cert are just accept the certificate. 
+6.	Login with username fortinetuser. 
+7.	Password is PizzaDay12345!
+8.	Skip the startup wizard.
+9.	If you are taken to the dashboard, congratulations your FortiGate-A is functional.
+10.	Now let’s check on FortiGate B, navigate back to the hub-studentXX-lab-rg.
+11.	If necessary, click on page 2 at the bottom of the screen, and find azlab-FGT-B-nic4 and click on it.
+12.	Note the Public IP address and copy it.
+13.	In a new browser, open a tab to https://yourFortigate B IP Address
+14.	Login with Username fortinetuser
+15.	Password is PizzaDay12345!
+16.	If you see a screen that states you need to upload a license, perform the steps below, if you are taken to the dashboard after the wizard, your unit is functional, and you can skip ahead to Task 3 Deploy Applications and Configure the Network.
+17.	If your screen says that you are only entitled to 1vCPU and 2 GB of RAM, notify your instructor, you will need new tokens. 
 
  ![](images/fortiverify1.png)
 

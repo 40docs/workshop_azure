@@ -162,9 +162,8 @@ Are availability zones the only form of High availability? No, there is also som
 
 30. Click on the HA Management subnet dropdown and select Management.
 
-31. Notice we are also creating a new subnet called Protected A subnet. Leave this dropdown as it is with the pre-selected Protected A subnet. 
-
-32. If needed, scroll down to Accelerated networking and select disabled.
+31. Lastly select the ProtectedA subnet for the protected subnet. 
+32. Scroll down to Accelerated networking and select disabled.
 
     !!! Note "Azure Accelerated Networking"
         Azure Accelerated Networking uses hardware-based virtualization to directly link a VM's network interface (NIC) to its network, bypassing the host's virtual switch and improving performance. We don’t need this in our lab. In a production environment you can turn on accelerated networking to tell Azure to deploy the SR-IOV NIC driver rather than the standard driver, giving better performance.
@@ -237,7 +236,7 @@ Let's login to each FortiGate to ensure it is functional.
 
 1.	Navigate to your hub-studentXX-lab-rg. Use the search bar at the top of the screen to search for it if needed.
 2.	In the list of resources click on azlab-FGT-nic4, this is the management interface.
-3.	Make a note of the IP address on the right-hand column and then copy it. 
+3.	Make a note of the Public IP address on the right-hand column and then copy it. 
 4.	Open another browser tab and enter https://Your FortiGateA IP address,
 5.	If you get a cert are just accept the certificate. 
 6.	Login with username fortinetuser. 

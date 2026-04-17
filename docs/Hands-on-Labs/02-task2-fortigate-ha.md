@@ -2,10 +2,10 @@
 One way of deploying FortiGates in Azure is to use the predefined templates in Market Place. A template decides how many FortiGates to deploy, how to design networking, and how to conduct High Availability. Let's look at the four templates available for deployment.
 
 The four available templates are:
-- Single FortiGate VM
-- Active-passive HA with SDN connector failover
-- Active-active with external and internal Azure Load Balancer
-- Active-passive with external and internal Azure load balancer
+ - Single FortiGate VM
+ - Active-passive HA with SDN connector failover
+ - Active-active with external and internal Azure Load Balancer
+ - Active-passive with external and internal Azure load balancer
 
 ### Single FortiGate VM 
 

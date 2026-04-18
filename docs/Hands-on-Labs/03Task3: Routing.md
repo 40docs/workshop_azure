@@ -191,7 +191,8 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
     | Virtual Machine Name      | vm-backend-app1    |
     | Administrator Username    | azureuser          | 
     | Password/Confirm Password | HappyChicken123!   |
-    | Subnet                    | 192.168.2.0        |
+    | Subnet                    | 192.168.2.0|
+    | Delete NIC when VM is deleted | unchecked        |
     | Public IP                 | None               |
 
 ## Configure Inter-VNet Routing 

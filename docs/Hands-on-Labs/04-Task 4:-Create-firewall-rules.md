@@ -112,7 +112,7 @@ Testing East-West Traffic
 3.	The command will now work as the policy permits it. 
 4.	Hit Ctrl C to stop the ping.
     ![](images/TestingRound1.png)
-5.  Repeat this process on the Frontend machine, but ping find the IP address of your virtual machine like you did for the first time. 
+5.  Repeat this process on the Frontend machine, but ping the IP address of your backend virtual machine. 
 6.	The ping is successful! 
 7.	Hit Ctrl C to stop the ping.
 8.	Please move to the Clean up task to tear down your lab resources — if you leave them running, they will continue to incur charges on your Azure subscription!

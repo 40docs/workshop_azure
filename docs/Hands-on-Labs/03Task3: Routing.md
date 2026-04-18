@@ -165,23 +165,24 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
      ![](images/image50.png)
 
-38. Click the dropdown for Virtual Network and scroll until you find vnet-frontend and select it.
+38. Click the dropdown for Virtual Network and scroll until you find vnet-app-frontend and select it.
 
 39. Ensure the subnet is default (192.168.1.0/24).
 
 40. Set the Public IP to none.
 
 41. Click delete NIC when VM is deleted. (you may have to scroll down a bit to see this)
+42. Click Review + Create
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image51.png)
 
-42. Click Create at the bottom of the screen once the validation passes.
+43. Click Create at the bottom of the screen once the validation passes.
 
-43. Wait for your virtual machine to be deployed, this will take a couple minutes.
+44. Wait for your virtual machine to be deployed, this will take a couple minutes.
 
     ![](images/image52.png)
 
-44. Challenge yourself! Repeat this section to create a VNet and VM for the backend app. Use the table below as a reference for what to enter.
+45. Challenge yourself! Repeat this section to create a VNet and VM for the backend app. Use the table below as a reference for what to enter.
 
     | Setting Name              | Value              |
     |---------------------------|--------------------|
@@ -215,7 +216,7 @@ Your Quest Map
     ![](images/AzureVNetpeering2.png)
 
 4.  Enter `frontend-spoke-to-hub` in the Peering link name.
-5.	Click the dropdown arrow and start typing vnet-frontend-spoke and select it from the search results.
+5.	Click the dropdown arrow and start typing vnet-app-frontend and select it from the search results.
 6. Ensure the two checkboxes are highlighted as shown in the screenshot below. This section sets the peering settings for the other vnet (our frontend spoke in this case).
 
     ![](images/AzureVNetpeering3.png)

@@ -127,9 +127,10 @@ Are availability zones the only form of High availability? No, there is also som
  ![](images/HAvailabilityset.png)
 
  Microsoft offers different SLAs on Azure based on the deployment that you use:
-- Availability zone (AZ) (different datacenter in the same region): 99.99%
-- Availability set (different rack and power): 99.95%
-- Single VM with premium SSD: 99.9% (no HA)
+ 
+* Availability zone (AZ) (different datacenter in the same region): 99.99%
+* Availability set (different rack and power): 99.95%
+* Single VM with premium SSD: 99.9% (no HA)
   
 ## Licensing Configuration
 

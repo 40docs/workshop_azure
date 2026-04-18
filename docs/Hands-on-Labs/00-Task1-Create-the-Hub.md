@@ -131,12 +131,13 @@ Your Quest Map
 4.  Click on the Subnet button (see screenshot above).
 
 5.  Change the name to `Public`.
+6.  Ensure to uncheck Enable private subnet. 
 
-6.  Ensure the starting address is 10.2.2.0 and the Size is /24 then click Add.
+7.  Ensure the starting address is 10.2.2.0 and the Size is /24 then click Add.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image18.png)
 
-7.  Please repeat the process of creating the remaining four subnets as per the table below:
+8.  Please repeat the process of creating the remaining four subnets as per the table below:
 
     | Subnet Name      | Starting Address | Size |
     |------------------|------------------|------|

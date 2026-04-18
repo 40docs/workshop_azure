@@ -61,7 +61,7 @@ Now that we know our interface mappings, let’s create our policy.
 Now for some fun, let’s test our north-south traffic.
 Remember back in the beginning we created a bastion? We are going to use that now to access our “apps”.
 
-1. Return to the browser tab with your azure portal.
+1. Return to the browser tab with your Azure portal.
 2.	Navigate to hub-studentXX-lab-rg. 
 3. Scroll down until you find vm-frontend-app1 and click on it.
     ![](images/TestingNorthSouth1.png)
@@ -84,7 +84,7 @@ Remember back in the beginning we created a bastion? We are going to use that no
 12. Now let’s test if we can ping our front-end server. Go back to the tab that has the Azure portal open and find your resource group. Locate the vm-frontend-app1 in the list of resources and open it. Scroll down to find the private IP address and copy it.
 13. Go back to your backend server and ping that IP address. 
 14. It will fail!
-15. Why? Because we need to permit this traffic in the firewall. (Remember the UDR we created? We now know they are working to direct traffic through our Fortigate!)
+15. Why? Because we need to permit this traffic in the firewall. (Remember the UDR we created? We now know they are working to direct traffic through our Fortigate! Because the UDR forces the traffic through the firewall!)
 
 
 ## Enabling East-West Traffic and Testing
@@ -112,7 +112,7 @@ Testing East-West Traffic
 3.	The command will now work as the policy permits it. 
 4.	Hit Ctrl C to stop the ping.
     ![](images/TestingRound1.png)
-5.  Repeat this process on the Frontend machine, but ping 192.168.2.5, which is the IP of the backend app.
+5.  Repeat this process on the Frontend machine, but ping find the IP address of your virtual machine like you did for the first time. 
 6.	The ping is successful! 
 7.	Hit Ctrl C to stop the ping.
 8.	Please move to the Clean up task to tear down your lab resources — if you leave them running, they will continue to incur charges on your Azure subscription!

@@ -195,6 +195,11 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
     | Delete NIC when VM is deleted | unchecked        |
     | Public IP                 | None               |
 
+    Your Quest Map
+    You have now finished building the backend spoke and VM!
+
+    ![](images/Youarehere30.jpg)
+
 ## Configure Inter-VNet Routing 
 
 So, what have we just built? If we use the analogy of a neighbourhood, we essentially have built two homes where people can talk to others in their homes, but  can’t leave to talk to the neighbours! In other words, hosts within a VNet can talk to other hosts in the same VNet by default, but they can’t talk to hosts outside of the VNet. There are two tools to help us facilitate inter-VNet communication VNet peering and User Defined Routes (UDR). 

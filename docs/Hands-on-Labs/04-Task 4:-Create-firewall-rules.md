@@ -84,7 +84,7 @@ Remember back in the beginning we created a bastion? We are going to use that no
 12. Now let’s test if we can ping our front-end server. Go back to the tab that has the Azure portal open and find your resource group. Locate the vm-frontend-app1 in the list of resources and open it. Scroll down to find the private IP address and copy it.
 13. Go back to your backend server and ping that IP address. 
 14. It will fail!
-15. Why? Because we need to permit this traffic in the firewall. (Remember the UDR we created? We now know they are working to direct traffic through our Fortigate! Because the UDR forces the traffic through the firewall!)
+15. Why? Because we need to permit this traffic in the firewall. (Remember the UDR we created? We now know they are working to direct traffic through our FortiGate! Because the UDR forces the traffic through the firewall!)
 
 
 ## Enabling East-West Traffic and Testing

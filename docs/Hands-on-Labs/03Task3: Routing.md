@@ -138,7 +138,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
 28. Scroll down until you see the Size option and click the dropdown.
 
-29. Select Standard_D2s_v3 -- 2 vcpus, 8GiB memory. (Note, if the recommened sizes are greyed out, then just leave this at the default of Standard_D2s_v5)
+29. Select Standard_D2s_v3 -- 2 vcpus, 8GiB memory. (Note, if the recommended sizes are greyed out, then just leave this at the default of Standard_D2s_v5)
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image47.png)
 

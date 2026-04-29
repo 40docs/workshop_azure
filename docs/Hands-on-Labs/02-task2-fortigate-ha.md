@@ -1,5 +1,5 @@
 # Task 2: FortiGate Deployment
-One way of deploying FortiGates in Azure is to use the predefined templates in Market Place. A template decides how many FortiGates to deploy, how to design networking, and how to conduct High Availability. Let's look at the four templates available for deployment.
+One way of deploying FortiGates in Azure is to use the predefined templates in Marketplace. A template decides how many FortiGates to deploy, how to design networking, and how to conduct High Availability. Let's look at the four templates available for deployment.
 
 The four available templates are:
 
@@ -45,7 +45,7 @@ In this section, we'll deploy FortiGate firewalls in a high-availability configu
 
 ## High Availability Overview
 
-We are now ready to deploy the HA FortiGate-VMs from Azure Marketplace. We are going to deploy two FortiGate-VMs running in Active-Passive mode. We will also deploy two load balancers to load balance traffic from both internal and external sources! Does that sound like too much? Don't worry, Azure MarketPlace has a preconfigured template to take care of all that! Ready? Let’s go!
+We are now ready to deploy the HA FortiGate-VMs from Azure Marketplace. We are going to deploy two FortiGate-VMs running in Active-Passive mode. We will also deploy two load balancers to load balance traffic from both internal and external sources! Does that sound like too much? Don't worry, Azure Marketplace has a preconfigured template to take care of all that! Ready? Let’s go!
 
 For additional information regarding the various templates available and their respective SLAs for failover please see [FortiGate Azure Administration Guide.](https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-administration-guide/983245)
 
@@ -190,7 +190,7 @@ Are availability zones the only form of High availability? No, there is also som
      Your Quest Map
     ![](images/youarehere6.jpg)
 
-37. Repeat this process for FortiGate A and B management and match the name in the screen shots below.
+37. Repeat this process for FortiGate A and B management and match the name in the screenshots below.
 
     **FortiGate A**
 
@@ -205,7 +205,7 @@ Are availability zones the only form of High availability? No, there is also som
 
         **Bastion is designed for RDP/SSH access to standard VMs.** It works by proxying a remote desktop or terminal session through the Azure portal. FortiGate management, on the other hand, is accessed through its own HTTPS web GUI and CLI (SSH), which have unique session handling, certificate management, and API endpoints that don't play nicely with the Bastion proxy. You need a direct HTTPS connection to the FortiGate's management interface for reliable day-to-day administration.
 
-        **In a production environment** you would typically lock down these management PIPs with Network Security Groups (NSGs), an azure feature, that restrict access to a set of known administrator source IPs. An NSG acts as a basic stateful firewall at the Azure networking layer. Think of it as an access control list (ACL) attached to a subnet or NIC that filters traffic before it ever reaches the FortiGate. NSGs operate independently from FortiGate firewall policies, giving you defense in depth. You could also use a VPN or ExpressRoute for private management access and skip the public IPs entirely. For our lab, assigning public IPs to the management interfaces is the simplest way to get you hands-on with the FortiGate GUI quickly.
+        **In a production environment** you would typically lock down these management PIPs with Network Security Groups (NSGs), an Azure feature, that restrict access to a set of known administrator source IPs. An NSG acts as a basic stateful firewall at the Azure networking layer. Think of it as an access control list (ACL) attached to a subnet or NIC that filters traffic before it ever reaches the FortiGate. NSGs operate independently from FortiGate firewall policies, giving you defense in depth. You could also use a VPN or ExpressRoute for private management access and skip the public IPs entirely. For our lab, assigning public IPs to the management interfaces is the simplest way to get you hands-on with the FortiGate GUI quickly.
 
         **The Bastion we deployed is still valuable!** We'll use it later to access our test VMs in the spoke networks — that's exactly the use case it was built for.
 
@@ -225,7 +225,7 @@ Are availability zones the only form of High availability? No, there is also som
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image35.png)
 
-43. When your deployment is complete it will look similar to the screen shot below. This can take a few minutes to display.
+43. When your deployment is complete it will look similar to the screenshot below. This can take a few minutes to display.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image36.png)
 
@@ -236,7 +236,7 @@ Let's login to each FortiGate to ensure it is functional.
 2.	In the list of resources click on azlab-FGT-nic4, this is the management interface.
 3.	Make a note of the Public IP address on the right-hand column and then copy it. 
 4.	Open another browser tab and enter https://Your FortiGateA IP address,
-5.	If you get a cert are just accept the certificate. 
+5.	If you get a cert warning just accept the certificate. 
 6.	Login with username fortinetuser. 
 7.	Password is PizzaDay12345!
 8.	Skip the startup wizard.
@@ -244,7 +244,7 @@ Let's login to each FortiGate to ensure it is functional.
 10.	Now let’s check on FortiGate B, navigate back to the hub-studentXX-lab-rg.
 11.	If necessary, click on page 2 at the bottom of the screen, and find azlab-FGT-B-nic4 and click on it.
 12.	Note the Public IP address and copy it.
-13.	In a new browser, open a tab to https://yourFortigate B IP Address
+13.	In a new browser, open a tab to https://yourFortiGate B IP Address
 14.	Login with Username fortinetuser
 15.	Password is PizzaDay12345!
 16.	If you see a screen that states you need to upload a license, perform the steps below, if you are taken to the dashboard after the wizard, your unit is functional, and you can skip ahead to Task 3 Deploy Applications and Configure the Network.
@@ -257,7 +257,7 @@ Let's login to each FortiGate to ensure it is functional.
 **Please only complete this section if you had a licensing issue on the FortiGates.**
 
 1.	Navigate back to your open Azure tab and find your hub-studentXX-lab-rg resource group.
-2.	In the resource section find azlab-FTG-A and click on it. 
+2.	In the resource section find azlab-FGT-A and click on it. 
 3.	Click on Stop.  
 ![](images/testingfortigate.jpg)
     

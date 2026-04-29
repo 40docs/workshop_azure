@@ -17,7 +17,7 @@ This lab guide will walk you through creating a comprehensive Azure connectivity
 
 Before starting this lab, ensure you have:
 
-- Your pod assignment number from your instuctor
+- Your pod assignment number from your instructor
 - The supplied username and password for the Azure portal
 - Basic understanding of networking concepts
 - Familiarity with Azure resource management

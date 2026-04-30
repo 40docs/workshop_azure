@@ -192,7 +192,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
     | Administrator Username    | azureuser          | 
     | Password/Confirm Password | HappyChicken123!   |
     | Subnet                    | 192.168.2.0|
-    | Delete NIC when VM is deleted | unchecked        |
+    | Delete NIC when VM is deleted | checked        |
     | Public IP                 | None               |
 
     Your Quest Map

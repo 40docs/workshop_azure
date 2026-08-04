@@ -112,7 +112,7 @@ Your Quest Map
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image16.png)
 
 ## Create Subnet Architecture
-The next step is to prepare the necessary subnets to enable connectivity to the FortiGate-VMs. Four subnets are needed, one for the public or untrusted zone, the private or trusted zone, out-of-band management, and the dedicated subnet for session and cluster syncing. Finally, we will create a subnet called Protected A, this is where we could deploy things like FortiAnalyzer or other apps. (more on this later)
+The next step is to prepare the necessary subnets to enable connectivity to the FortiGate-VMs. Four subnets are needed, one for the public or untrusted zone, a second for the private or trusted zone, a third for the out-of-band management traffic, and finally the forth for the dedicated subnet for session and cluster syncing. Finally, we will create a subnet called Protected A, this is where we could deploy things like FortiAnalyzer or other apps. (more on this later)
 
 ## Subnet Configuration
 

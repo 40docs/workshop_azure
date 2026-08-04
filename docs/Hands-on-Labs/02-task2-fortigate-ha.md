@@ -233,7 +233,7 @@ Are availability zones the only form of High availability? No, there is also som
 Let's login to each FortiGate to ensure it is functional. 
 
 1.	Navigate to your hub-studentXX-lab-rg. Use the search bar at the top of the screen to search for it if needed.
-2.	In the list of resources click on azlab-FGT-nic4, this is the management interface.
+2.	In the list of resources click on azlab-FGT-A-nic4, this is the management interface.
 3.	Make a note of the Public IP address on the right-hand column and then copy it. 
 4.	Open another browser tab and enter https://Your FortiGateA IP address,
 5.	If you get a cert warning just accept the certificate. 

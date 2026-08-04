@@ -130,7 +130,7 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
     a.  We are doing this in the lab for simplicity reasons. You may choose differently for a real production application.
 
-26. Select security type to Standard.
+26. Leave Security type set to Trusted launch virtual machines.
 
      ![A screenshot of a computer AI-generated content may be incorrect.](images/image46.png)
 

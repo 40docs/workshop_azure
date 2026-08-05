@@ -159,11 +159,9 @@ The purpose of this lab is to simulate basic connectivity, so we are not going t
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images/image49.png)
 
-36. Click Next: Disks> as shown in the screenshot above.
+36. Click Next.
 
-37. Leave everything at its default on the Disks screen and click Next : Networking.
-
-     ![](images/image50.png)
+37. Leave everything at its default on the Disks screen and click Next.
 
 38. Click the dropdown for Virtual Network and scroll until you find vnet-app-frontend and select it.
 
@@ -239,7 +237,7 @@ Your Quest Map
     ![](images/AzureVNetpeering7.png)
 ## UDR Creation
 
-Do you remember that old phrase "too many cooks in the kitchen"? We can loosely think of that when we think of routing in Azure. In the on-premises data center, we may have one cook, a firewall or a router to take care of subnet-to-subnet traffic. In Azure, we have two to take into consideration. Azure uses **system-managed-routing tables** which in our analogy represents the second cook. Each VNet automatically creates routes between its subnets, meaning traffic **could** bypass a firewall unless you configure a UDR to force traffic through the firewall. Azure handles the propagation of routes into the VNet, but you’ll often need to fine-tune UDRs to ensure traffic flows through security appliances like FortiGate rather than taking the default system path. This shift from hardware-centric to platform-managed routing is a key difference to keep in mind when designing secure architectures.
+Do you remember that old phrase "too many cooks in the kitchen"? We can loosely think of that when we think of routing in Azure. In the on-premises data center we may have one cook, a firewall or a router, to take care of subnet-to-subnet traffic. In Azure, we have two to take into consideration. Azure uses **system-managed-routing tables** which in our analogy represents the second cook. Each VNet automatically creates routes between its subnets, meaning traffic **could** bypass a firewall unless you configure a UDR to force traffic through the firewall. Azure handles the propagation of routes into the VNet, but you’ll often need to fine-tune UDRs to ensure traffic flows through security appliances like FortiGate rather than taking the default system path. This shift from hardware-centric to platform-managed routing is a key difference to keep in mind when designing secure architectures.
 
 1.	Navigate back to the hub-studentXX-lab-rg. 
 2.	Click Create.
@@ -292,7 +290,7 @@ Create the Route table
 - Resource group: hub-studentXX-lab-rg
 - Region: US East
 - Name: udr-backend-spoke
-- Propagate gateway routes? No
+- Enable peering routes: No
 
 Route Table
 

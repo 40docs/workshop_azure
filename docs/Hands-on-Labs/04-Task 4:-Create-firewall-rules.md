@@ -13,8 +13,8 @@ Now that we have peered our VNets and built our routing tables everything is rea
 7.	Log in with username: fortinetuser Password PizzaDay12345!
 8.	On the left-hand side, navigate to Network and then Click on Interfaces. 
     ![](images/FirewallPolicy3.png)
- Question 1: using the diagram at the start of this task, which interface is connected to the public subnet?
 
+ Question 1: using the diagram at the start of this task, which interface is connected to the public subnet
  Question 2: Which port is connected to the internal or private subnet?
 
 Now that we know our interface mappings, let’s create our policy.
@@ -84,7 +84,7 @@ Remember back in the beginning we created a bastion? We are going to use that no
 12. Now let’s test if we can ping our front-end server. Go back to the tab that has the Azure portal open and find your resource group. Locate the vm-frontend-app1 in the list of resources and open it. Scroll down to find the private IP address and copy it.
 13. Go back to your backend server and ping that IP address. 
 14. It will fail!
-15. Why? Because we need to permit this traffic in the firewall. (Remember the UDR we created? We now know they are working to direct traffic through our FortiGate! Because the UDR forces the traffic through the firewall!)
+15. Why? Because we need to permit this traffic in the firewall. Remember the UDR we created? It forces traffic through the Fortigate and there is no policy on the Fortigate to permit this traffic! Time to fix that!
 
 
 ## Enabling East-West Traffic and Testing

@@ -96,15 +96,11 @@ Your Quest Map
     
 13. Ensure FortiGate Image is set to 7.4.12. FortiGate image versions in these drop downs may change over time. If 7.4.12 is not available choose the latest version of 7.4.x.
      ![](images/image27.png) 
-14. Click on the Change Size link in the Size section. Since we are running in a lab environment we do not need an 8vCPU VM. We are going to use a 4 vCPU size instead.
+14. Leave the Size as 2x Standard D8 v4
   
-15. Look for the Previous Generations drop down and expand it.
-    
-16. Click on F4.
-    
-17. Click on Select.
-![](images/image27a.png) 
-18. Ensure Availability Option is set to Availability Zones.
+15. Ensure Virtual Machine Security Type is set to Trusted Launch Virtual Machine.
+16. Ensure Availability Option is set to Availability Zones.
+
 
 ## What are availability zones?
 
